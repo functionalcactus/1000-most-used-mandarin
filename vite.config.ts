@@ -4,6 +4,11 @@ import { VitePWA } from 'vite-plugin-pwa'
 export default defineConfig({
   esbuild: { jsx: 'automatic', jsxImportSource: 'preact' },
   build: { chunkSizeWarningLimit: 800 },
+  define: {
+    __BUILD__: JSON.stringify(
+      new Date().toLocaleString('en-GB', { timeZone: 'Asia/Shanghai', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })
+    )
+  },
   plugins: [
     VitePWA({
       registerType: 'autoUpdate',

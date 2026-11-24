@@ -385,7 +385,7 @@ export function SettingsView({ settings, onSettings, onRetakePlacement }: { sett
         </div>
       </section>
       {msg && <p class="note">{msg}</p>}
-      <p class="muted small credits">Word list from the official HSK 3.0 syllabus, levels 1–3. Chinese typeface: LXGW WenKai (SIL Open Font License).</p>
+      <p class="muted small credits">Word list from the official HSK 3.0 syllabus, levels 1–3. Chinese typeface: LXGW WenKai (SIL Open Font License).<br />Version {__BUILD__}</p>
     </div>
   )
 }
