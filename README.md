@@ -1,4 +1,4 @@
-# HSK Basics
+# Qian 千
 
 A calm, daily Mandarin practice app for the 1,000 words of the new HSK 1–3 (2025 syllabus) and core grammar.
 It runs in the browser, installs to the iPhone home screen, and works offline after the first load.

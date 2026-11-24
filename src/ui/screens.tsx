@@ -303,7 +303,7 @@ export function SettingsView({ settings, onSettings, onRetakePlacement }: { sett
     const blob = new Blob([await exportAll()], { type: 'application/json' })
     const a = document.createElement('a')
     a.href = URL.createObjectURL(blob)
-    a.download = `bao-hsk-backup-${new Date().toISOString().slice(0, 10)}.json`
+    a.download = `qian-backup-${new Date().toISOString().slice(0, 10)}.json`
     a.click()
     setMsg('Backup saved. Keep it in Files or iCloud Drive.')
   }

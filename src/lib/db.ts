@@ -39,7 +39,7 @@ class AppDB extends Dexie {
   logs!: Table<LogRow, number>
   kv!: Table<KV, string>
   constructor() {
-    super('bao-hsk')
+    super('bao-hsk') // internal storage name from the first version; kept so saved progress survives
     this.version(1).stores({
       cards: 'id, item, facet, due, state',
       logs: '++id, card, ts',
@@ -69,12 +69,12 @@ export async function requestPersist() {
 
 export async function exportAll(): Promise<string> {
   const [cards, logs, kv] = await Promise.all([db.cards.toArray(), db.logs.toArray(), db.kv.toArray()])
-  return JSON.stringify({ app: 'bao-hsk', version: 1, exported: new Date().toISOString(), cards, logs, kv })
+  return JSON.stringify({ app: 'qian', version: 1, exported: new Date().toISOString(), cards, logs, kv })
 }
 
 export async function importAll(json: string) {
   const data = JSON.parse(json)
-  if (data.app !== 'bao-hsk') throw new Error('This file is not a Bao HSK backup.')
+  if (data.app !== 'qian' && data.app !== 'bao-hsk') throw new Error('This file is not a Qian backup.')
   await db.transaction('rw', db.cards, db.logs, db.kv, async () => {
     await Promise.all([db.cards.clear(), db.logs.clear(), db.kv.clear()])
     await db.cards.bulkPut(data.cards)

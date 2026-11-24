@@ -14,8 +14,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['icons/*.png', 'icons/*.svg', 'fonts/*.woff2'],
       manifest: {
-        name: 'HSK Basics',
-        short_name: 'HSK Basics',
+        name: 'Qian',
+        short_name: 'Qian',
         description: 'Daily Mandarin practice: the 1,000 words of new HSK 1–3 and core grammar.',
         lang: 'en',
         start_url: '/',
