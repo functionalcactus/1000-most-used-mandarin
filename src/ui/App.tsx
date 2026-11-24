@@ -5,7 +5,7 @@ import { setRetention } from '../lib/srs'
 import { Run } from './Run'
 import { Placement } from './Placement'
 import { Library, MapView, SettingsView, Today } from './screens'
-import { Bao } from './art'
+import { Icon } from './art'
 
 type Tab = 'today' | 'map' | 'library' | 'settings'
 
@@ -27,9 +27,7 @@ export function App() {
 
   if (!settings || placed === null)
     return (
-      <div class="screen center">
-        <Bao mood="idle" />
-      </div>
+      <div class="screen center" />
     )
 
   if (!placed) return <Placement lang={settings.gloss} onDone={() => setPlaced(true)} />
@@ -72,17 +70,17 @@ export function App() {
           />
         )}
       </div>
-      <nav class="tabbar">
+      <nav class="tabbar" aria-label="Sections">
         {(
           [
-            ['today', '今', 'Today'],
-            ['map', '图', 'Map'],
-            ['library', '书', 'Library'],
-            ['settings', '设', 'Settings']
-          ] as [Tab, string, string][]
-        ).map(([t, glyph, label]) => (
-          <button class={tab === t ? 'on' : ''} onClick={() => setTab(t)} aria-current={tab === t}>
-            <span class="tab-glyph" lang="zh-CN">{glyph}</span>
+            ['today', 'today', 'Today'],
+            ['map', 'progress', 'Progress'],
+            ['library', 'words', 'Words'],
+            ['settings', 'settings', 'Settings']
+          ] as [Tab, 'today' | 'progress' | 'words' | 'settings', string][]
+        ).map(([t, icon, label]) => (
+          <button class={tab === t ? 'on' : ''} onClick={() => setTab(t)} aria-current={tab === t ? 'page' : undefined}>
+            <Icon name={icon} size={24} />
             <span class="tab-label">{label}</span>
           </button>
         ))}

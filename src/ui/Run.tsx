@@ -6,7 +6,7 @@ import {
 import { db } from '../lib/db'
 import { gradeFrom, gradeFromLadder, newCard, review, Rating } from '../lib/srs'
 import { DrillView, TeachGrammar, TeachWord, type Answer } from './drills'
-import { Bao, type Mood } from './art'
+import { Icon, Seal } from './art'
 import { gloss, type GlossLang } from '../lib/data'
 
 type RunStep = Step | { type: 'retry'; drill: Drill }
@@ -17,13 +17,13 @@ export function Run({ settings, onExit }: { settings: Settings; onExit: () => vo
   const [queue, setQueue] = useState<RunStep[]>([])
   const [i, setI] = useState(0)
   const [answered, setAnswered] = useState<Answer | null>(null)
-  const [mood, setMood] = useState<Mood>('idle')
   const [finished, setFinished] = useState(false)
   const [stats, setStats] = useState<Stats>({ done: 0, correct: 0, newWords: 0, newGrammar: 0, reviews: 0 })
   const [elapsed, setElapsed] = useState(0)
   const started = useRef(Date.now())
   const mistakes = useRef(new Map<string, number>())
   const retried = useRef(new Set<number>())
+  const autoNext = useRef<ReturnType<typeof setTimeout> | null>(null)
   const budgetMs = settings.budget * 60_000
 
   useEffect(() => {
@@ -40,8 +40,9 @@ export function Run({ settings, onExit }: { settings: Settings; onExit: () => vo
   const timeUp = elapsed >= budgetMs
 
   async function advance() {
+    if (autoNext.current) clearTimeout(autoNext.current)
+    autoNext.current = null
     setAnswered(null)
-    setMood('idle')
     let next = i + 1
     const over = Date.now() - started.current >= budgetMs
     // when time is up, finish the word being taught, then stop
@@ -63,7 +64,6 @@ export function Run({ settings, onExit }: { settings: Settings; onExit: () => vo
 
   async function onAnswer(a: Answer) {
     setAnswered(a)
-    setMood(a.correct ? 'cheer' : 'oops')
     const s = step
     setStats((st) => ({ ...st, done: st.done + 1, correct: st.correct + (a.correct ? 1 : 0) }))
 
@@ -91,29 +91,32 @@ export function Run({ settings, onExit }: { settings: Settings; onExit: () => vo
       retried.current.add(i)
       setQueue((q) => [...q, { type: 'retry', drill: s.drill }])
     }
-    if (a.correct) setTimeout(() => setMood('idle'), 900)
+    // right answers move on by themselves; misses wait for Continue so you can read the answer
+    if (a.correct) autoNext.current = setTimeout(() => advanceRef.current(), 850)
   }
+  const advanceRef = useRef(advance)
+  advanceRef.current = advance
 
-  if (!plan) return <div class="screen center"><Bao mood="wave" /><p>Getting today's run ready…</p></div>
+  if (!plan) return <div class="screen center"><p class="muted">Preparing today’s run…</p></div>
   if (finished) return <Wrap stats={stats} plan={plan} onExit={onExit} />
 
   const lang: GlossLang = settings.gloss
   const progress = Math.min(1, elapsed / budgetMs)
+  const left = Math.max(0, Math.ceil((budgetMs - elapsed) / 1000))
+  const clock = `${Math.floor(left / 60)}:${String(left % 60).padStart(2, '0')}`
 
   return (
     <div class="screen run">
       <header class="run-top">
         <button class="icon-btn" onClick={() => (stats.done > 0 ? finish() : onExit())} aria-label="End run">
-          ✕
+          <Icon name="close" size={20} />
         </button>
-        <div class="timebar">
+        <div class="timebar" role="progressbar" aria-valuenow={Math.round(progress * 100)} aria-valuemin={0} aria-valuemax={100} aria-label="Time used">
           <div class="timebar-fill" style={{ width: `${progress * 100}%` }} />
         </div>
-        <div class="run-bao">
-          <Bao mood={mood} size={44} />
-        </div>
+        <span class="clock" aria-label="Time left">{clock}</span>
       </header>
-      {timeUp && <div class="timeup">Time's up — finishing this one</div>}
+      {timeUp && <div class="timeup">Time’s up. Finishing this one.</div>}
 
       <main class="run-body" key={i}>
         {step.type === 'teach-word' && <TeachWord word={step.word} lang={lang} onNext={advance} />}
@@ -121,42 +124,41 @@ export function Run({ settings, onExit }: { settings: Settings; onExit: () => vo
         {(step.type === 'review' || step.type === 'ladder' || step.type === 'challenge' || step.type === 'retry') && (
           <>
             {step.type === 'retry' && <p class="retry-tag">One more try</p>}
-            {step.type === 'challenge' && <p class="retry-tag">Sentence challenge</p>}
             <DrillView drill={step.drill} lang={lang} onAnswer={onAnswer} answered={answered} />
           </>
         )}
       </main>
 
       {answered && (
-        <footer class={`feedback ${answered.correct ? 'ok' : 'no'}`}>
+        <footer class={`feedback ${answered.correct ? 'ok' : 'no'}`} aria-live="polite">
+          <span class="feedback-icon"><Icon name={answered.correct ? 'check' : 'cross'} size={20} stroke={2.4} /></span>
           <div class="feedback-text">
-            <strong>{answered.correct ? pickPraise() : answered.close ? 'So close' : 'Not quite'}</strong>
+            <strong>{answered.correct ? 'Correct' : answered.close ? 'Check the tones' : 'Not quite'}</strong>
             {!answered.correct && 'drill' in step && <span>{answerLine(step.drill, lang)}</span>}
           </div>
-          <button class="btn btn-continue" onClick={advance} autoFocus>
-            Continue
-          </button>
+          {!answered.correct && (
+            <button class="btn btn-continue" onClick={advance} autoFocus>
+              Continue
+            </button>
+          )}
         </footer>
       )}
     </div>
   )
 }
 
-const PRAISE = ['Nice!', 'Yes!', '很好！', 'Correct', 'Got it', '对！']
-const pickPraise = () => PRAISE[Math.floor(Math.random() * PRAISE.length)]
-
 function answerLine(d: Drill, lang: GlossLang): string {
   switch (d.kind) {
     case 'meaning':
     case 'listen':
     case 'pinyin':
-      return `${d.word.hanzi.replace(/（|）/g, '')} · ${d.word.pinyin} · ${gloss(d.word, lang)}`
+      return `${d.word.hanzi.replace(/（|）/g, '')}  ${d.word.pinyin}  ${gloss(d.word, lang)}`
     case 'cloze':
       return d.ex.zh
     case 'builder':
       return d.ex.zh
     case 'gchoice':
-      return `${d.ex.focus} — ${d.ex.zh}`
+      return d.ex.zh
   }
 }
 
@@ -172,21 +174,21 @@ function Wrap({ stats, plan, onExit }: { stats: Stats; plan: RunPlan; onExit: ()
   const empty = stats.done === 0 && plan.steps.length === 0
   return (
     <div class="screen center wrap">
-      <Bao mood={empty ? 'sleep' : 'cheer'} size={120} />
-      <h1>{empty ? 'Nothing due right now' : 'Run complete'}</h1>
+      {empty ? <Seal char="休" size={88} faded /> : <Seal char="完" size={88} stamp />}
+      <h1>{empty ? 'Nothing due right now' : 'Today’s run is done'}</h1>
       {empty ? (
-        <p class="muted">Everything is learned for today. Come back tomorrow.</p>
+        <p class="muted">Every card is up to date. New reviews arrive tomorrow.</p>
       ) : (
-        <div class="wrap-stats">
-          <div><b>{stats.done}</b><span>answers</span></div>
-          <div><b>{acc}%</b><span>correct</span></div>
-          <div><b>{stats.newWords}</b><span>new words</span></div>
-          {stats.newGrammar > 0 && <div><b>{stats.newGrammar}</b><span>grammar</span></div>}
-        </div>
+        <dl class="wrap-stats">
+          <div><dt>Answers</dt><dd>{stats.done}</dd></div>
+          <div><dt>Correct</dt><dd>{acc}%</dd></div>
+          <div><dt>New words</dt><dd>{stats.newWords}</dd></div>
+          {stats.newGrammar > 0 && <div><dt>Grammar</dt><dd>{stats.newGrammar}</dd></div>}
+        </dl>
       )}
-      {tomorrow !== null && <p class="muted">Tomorrow: about {tomorrow} reviews waiting.</p>}
+      {tomorrow !== null && <p class="muted">Tomorrow: about {tomorrow} reviews.</p>}
       <button class="btn btn-primary" onClick={onExit}>
-        Back to today
+        Done
       </button>
     </div>
   )

@@ -57,7 +57,7 @@ export const TEACHABLE_GRAMMAR = GRAMMAR.filter((g) => g.ex && g.ex.length > 0)
 export type GlossLang = 'en' | 'th' | 'both'
 export function gloss(w: Word, lang: GlossLang): string {
   if (lang === 'th') return w.th || w.en
-  if (lang === 'both' && w.th) return `${w.en} · ${w.th}`
+  if (lang === 'both' && w.th) return `${w.en}\n${w.th}`
   return w.en
 }
 export function exGloss(e: { en: string; th: string }, lang: GlossLang): string {

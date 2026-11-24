@@ -1,14 +1,15 @@
 import { useEffect, useMemo, useState } from 'preact/hooks'
 import { db, exportAll, importAll, resetAll, type CardRow } from '../lib/db'
-import { PLAN, dueCards, getStreak, saveSettings, syncUnlocks, today, type Budget, type Settings, type Streak } from '../lib/session'
+import { PLAN, dueCards, getStreak, saveSettings, syncUnlocks, today, weekStrip, type Budget, type Settings, type Streak } from '../lib/session'
 import { TEACH_ORDER, WORDS, GRAMMAR, gloss, plainHanzi, type GlossLang, type Word } from '../lib/data'
 import { hasChineseVoice, speak } from '../lib/audio'
 import { setRetention } from '../lib/srs'
-import { Bao, Hillside } from './art'
+import { Icon, Seal } from './art'
 import { ExampleBlock, Hanzi, LevelBadge, Pinyin, SpeakButton } from './bits'
 
 // ---------- shared: word memory state ----------
 export type MemState = 'unseen' | 'learning' | 'young' | 'mature'
+const MEM_LABEL: Record<MemState, string> = { unseen: 'not started', learning: 'learning', young: 'getting there', mature: 'known' }
 export function memState(c?: CardRow): MemState {
   if (!c) return 'unseen'
   if (c.stability >= 21) return 'mature'
@@ -24,9 +25,12 @@ export function useRecCards() {
 }
 
 // ---------- Today ----------
+type Day = Awaited<ReturnType<typeof weekStrip>>[number]
+
 export function Today({ settings, onStart, onSettings }: { settings: Settings; onStart: (b: Budget) => void; onSettings: (s: Settings) => void }) {
   const [due, setDue] = useState<number | null>(null)
   const [streak, setStreak] = useState<Streak | null>(null)
+  const [week, setWeek] = useState<Day[]>([])
   const [noVoice, setNoVoice] = useState(false)
   const cards = useRecCards()
   useEffect(() => {
@@ -34,35 +38,55 @@ export function Today({ settings, onStart, onSettings }: { settings: Settings; o
     const t = setTimeout(() => setNoVoice(!hasChineseVoice()), 1500)
     syncUnlocks().then(() => dueCards().then((d) => setDue(new Set(d.map((c) => c.item)).size)))
     getStreak().then(setStreak)
+    weekStrip().then(setWeek)
     return () => clearTimeout(t)
   }, [])
-  const learned = cards ? [...cards.values()].filter((c) => memState(c) !== 'learning' || c.seeded).length : 0
-  const started = cards ? cards.size : 0
   const plan = PLAN[settings.budget]
   const catchUp = due !== null && due > plan.cap
   const nextWords = cards ? TEACH_ORDER.filter((w) => !cards.has('w' + w.id)).slice(0, catchUp ? 0 : plan.newWords) : []
-  const hour = new Date().getHours()
-  const hello = hour < 12 ? '早上好' : hour < 18 ? '下午好' : '晚上好'
+  const first = nextWords[0]
   const doneToday = streak?.last === today()
+  const known = (l: number) => (cards ? WORDS.filter((w) => w.level === l && isKnown(cards.get('w' + w.id))).length : 0)
+  const totals = [1, 2, 3].map((l) => ({ level: l, known: known(l), all: WORDS.filter((w) => w.level === l).length }))
+  const knownAll = totals.reduce((a, t) => a + t.known, 0)
+  const dateLine = new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' })
 
   return (
     <div class="screen today">
-      <div class="today-hero">
-        <Hillside />
-        <div class="today-bao">
-          <Bao mood={doneToday ? 'cheer' : 'wave'} size={104} />
-        </div>
-      </div>
-      <div class="today-body">
-        <p class="hello" lang="zh-CN">{hello}</p>
-        <h1>{doneToday ? 'Today’s run is done' : 'Ready for today’s run?'}</h1>
+      <header class="large-title">
+        <p class="date-line">{dateLine}</p>
+        <h1>Today</h1>
+      </header>
 
-        <div class="chips" role="radiogroup" aria-label="Daily time">
+      <section class="hero" aria-label="Today’s run">
+        {doneToday ? (
+          <div class="hero-word">
+            <Seal char="完" size={72} />
+            <p class="hero-meaning">Today’s run is done. Come back tomorrow, or practise a little more.</p>
+          </div>
+        ) : first ? (
+          <div class="hero-word">
+            <p class="hero-hanzi" lang="zh-CN">{plainHanzi(first)}</p>
+            <p class="hero-meaning">
+              <span class="hero-py">{first.pinyin}</span> {gloss(first, settings.gloss)}
+            </p>
+          </div>
+        ) : (
+          <div class="hero-word">
+            <p class="hero-count">{due ?? 0}</p>
+            <p class="hero-meaning">{catchUp ? 'reviews waiting. Today is a catch-up day: no new words until the pile is down.' : 'reviews waiting'}</p>
+          </div>
+        )}
+        <p class="hero-plan">
+          {nextWords.length} new {nextWords.length === 1 ? 'word' : 'words'}, {due ?? 0} {due === 1 ? 'review' : 'reviews'}
+        </p>
+
+        <div class="segmented" role="radiogroup" aria-label="Daily time">
           {([5, 10, 15, 20] as Budget[]).map((b) => (
             <button
               role="radio"
               aria-checked={settings.budget === b}
-              class={`chip ${settings.budget === b ? 'on' : ''}`}
+              class={settings.budget === b ? 'on' : ''}
               onClick={async () => {
                 const s = { ...settings, budget: b }
                 await saveSettings(s)
@@ -73,40 +97,53 @@ export function Today({ settings, onStart, onSettings }: { settings: Settings; o
             </button>
           ))}
         </div>
-
-        <button class="btn btn-start" onClick={() => onStart(settings.budget)}>
-          {doneToday ? 'Do another run' : 'Start today’s run'}
+        <button class={`btn ${doneToday ? 'btn-secondary' : 'btn-primary'} btn-block`} onClick={() => onStart(settings.budget)}>
+          {doneToday ? 'Practise again' : 'Start today’s run'}
         </button>
+      </section>
 
-        <div class="today-stats">
-          <div class="stat"><b>{due ?? '–'}</b><span>due</span></div>
-          <div class="stat"><b>{nextWords.length}</b><span>new</span></div>
-          <div class="stat"><b>{streak?.count ?? 0}</b><span>day streak</span></div>
+      <section class="group">
+        <div class="group-head">
+          <h2>This week</h2>
+          <span class="muted">{streak?.count ? `${streak.count}-day streak` : 'No streak yet'}</span>
         </div>
-        {catchUp && <p class="note">Catch-up day: reviews only until the pile is down.</p>}
-        {nextWords.length > 0 && (
-          <p class="muted next-words" lang="zh-CN">
-            Next up: {nextWords.map((w) => plainHanzi(w)).join(' · ')}
-          </p>
-        )}
+        <ol class="week">
+          {week.map((d) => (
+            <li class={`${d.isToday ? 'is-today' : ''} ${d.future ? 'is-future' : ''}`} aria-label={`${d.key}${d.done ? ', done' : ''}`}>
+              {d.done ? <Seal char={d.label} size={34} /> : <span class="day-empty" lang="zh-CN">{d.label}</span>}
+            </li>
+          ))}
+        </ol>
+      </section>
 
-        <div class="progress-card">
-          <div class="progress-head">
-            <span>Words</span>
-            <span><b>{learned}</b> / 1,000 known · {started} started</span>
-          </div>
-          <div class="progress-bar"><div style={{ width: `${(learned / 1000) * 100}%` }} /></div>
+      <section class="group">
+        <div class="group-head">
+          <h2>Words known</h2>
+          <span class="muted">{knownAll} of 1,000</span>
         </div>
-        {noVoice && (
-          <p class="note">
-            No Chinese voice found on this device, so listening drills are swapped for reading. On iPhone: Settings → Accessibility → Spoken
-            Content → Voices → Chinese.
-          </p>
-        )}
-      </div>
+        <ul class="levels">
+          {totals.map((t) => (
+            <li>
+              <span>HSK {t.level}</span>
+              <div class="meter" aria-hidden="true"><div style={{ width: `${(t.known / t.all) * 100}%` }} /></div>
+              <span class="muted num">{t.known}/{t.all}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {noVoice && (
+        <p class="notice">
+          No Chinese voice is installed, so listening drills are swapped for reading. To add one on iPhone: Settings, Accessibility, Spoken
+          Content, Voices, Chinese.
+        </p>
+      )}
     </div>
   )
 }
+
+/** Counts as known: started and past the first few days, or marked known by placement. */
+const isKnown = (c?: CardRow) => !!c && (c.stability >= 7 || !!c.seeded)
 
 // ---------- Map ----------
 export function MapView({ lang }: { lang: GlossLang }) {
@@ -116,18 +153,18 @@ export function MapView({ lang }: { lang: GlossLang }) {
   const count = (l: number, s: MemState) => WORDS.filter((w) => w.level === l && memState(cards.get('w' + w.id)) === s).length
   return (
     <div class="screen map">
-      <h1>Progress map</h1>
-      <p class="muted">One tile per word. Tap a tile to open it.</p>
+      <header class="large-title"><h1>Progress</h1></header>
+      <p class="muted">Each square is one word. Tap a square to open it.</p>
       <div class="legend">
         <span><i class="m-unseen" />not yet</span>
         <span><i class="m-learning" />learning</span>
         <span><i class="m-young" />getting there</span>
-        <span><i class="m-mature" />known (3+ weeks)</span>
+        <span><i class="m-mature" />known for 3+ weeks</span>
       </div>
       {[1, 2, 3].map((l) => (
         <section class="map-level">
           <h2>
-            HSK {l} <small>{count(l, 'mature')} known · {count(l, 'young') + count(l, 'learning')} in progress</small>
+            HSK {l} <small>{count(l, 'mature')} known, {count(l, 'young') + count(l, 'learning')} in progress</small>
           </h2>
           <div class="grid">
             {TEACH_ORDER.filter((w) => w.level === l).map((w) => (
@@ -162,14 +199,14 @@ export function Library({ lang }: { lang: GlossLang }) {
   }, [q, level])
   return (
     <div class="screen library">
-      <h1>Library</h1>
+      <header class="large-title"><h1>Words</h1></header>
       <div class="seg">
         <button class={tab === 'words' ? 'on' : ''} onClick={() => setTab('words')}>Words</button>
         <button class={tab === 'grammar' ? 'on' : ''} onClick={() => setTab('grammar')}>Grammar</button>
       </div>
       {tab === 'words' ? (
         <>
-          <input class="search" placeholder="Search hanzi, pinyin, English or Thai" value={q} onInput={(e) => setQ((e.target as HTMLInputElement).value)} />
+          <input class="search" aria-label="Search words" placeholder="Search hanzi, pinyin, English or Thai" value={q} onInput={(e) => setQ((e.target as HTMLInputElement).value)} />
           <div class="chips small">
             {[0, 1, 2, 3].map((l) => (
               <button class={`chip ${level === l ? 'on' : ''}`} onClick={() => setLevel(l)}>
@@ -230,7 +267,7 @@ export function WordSheet({ word, lang, card, onClose }: { word: Word; lang: Glo
   return (
     <div class="sheet-backdrop" onClick={onClose}>
       <div class="sheet" onClick={(e) => e.stopPropagation()} role="dialog" aria-modal="true">
-        <button class="icon-btn sheet-close" onClick={onClose} aria-label="Close">✕</button>
+        <button class="icon-btn sheet-close" onClick={onClose} aria-label="Close"><Icon name="close" size={18} /></button>
         <div class="teach-head">
           <Hanzi word={word} />
           <div class="teach-py">
@@ -246,7 +283,7 @@ export function WordSheet({ word, lang, card, onClose }: { word: Word; lang: Glo
         {(word.ex || []).map((ex) => <ExampleBlock ex={ex} lang={lang} />)}
         {!word.ex && <p class="muted">Example sentences for HSK {word.level} are coming in a later update.</p>}
         <p class="muted small">
-          {card ? `Memory: ${memState(card)} · next review ${due!.toLocaleDateString()}` : 'Not started yet'}
+          {card ? `Memory: ${MEM_LABEL[memState(card)]}. Next review ${due!.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}.` : 'Not started yet.'}
         </p>
       </div>
     </div>
@@ -283,7 +320,7 @@ export function SettingsView({ settings, onSettings, onRetakePlacement }: { sett
   }
   return (
     <div class="screen settings">
-      <h1>Settings</h1>
+      <header class="large-title"><h1>Settings</h1></header>
       <section>
         <h2>Daily time</h2>
         <div class="chips">
@@ -348,7 +385,7 @@ export function SettingsView({ settings, onSettings, onRetakePlacement }: { sett
         </div>
       </section>
       {msg && <p class="note">{msg}</p>}
-      <p class="muted small credits">Word list: official HSK 3.0 syllabus (levels 1–3). Made for Gunn.</p>
+      <p class="muted small credits">Word list from the official HSK 3.0 syllabus, levels 1–3. Chinese typeface: LXGW WenKai (SIL Open Font License).</p>
     </div>
   )
 }

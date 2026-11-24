@@ -65,7 +65,7 @@ function MeaningPick({ drill, lang, onAnswer, answered }: Props & { drill: Extra
   const [chosen, setChosen] = useState<Word | null>(null)
   return (
     <div class="drill">
-      <p class="prompt-label">What does this mean?</p>
+      <p class="prompt-label">Choose the meaning</p>
       <div class="prompt-hanzi">
         <Hanzi word={drill.word} />
         {answered && <Pinyin text={drill.word.pinyin} />}
@@ -95,7 +95,7 @@ function ListenPick({ drill, onAnswer, answered }: Props & { drill: Extract<Dril
   }, [drill])
   return (
     <div class="drill">
-      <p class="prompt-label">Which word do you hear?</p>
+      <p class="prompt-label">Choose the word you hear</p>
       <div class="prompt-audio">
         <SpeakButton text={plainHanzi(drill.word)} big />
       </div>
@@ -152,7 +152,7 @@ function PinyinType({ drill, lang, onAnswer, answered }: Props & { drill: Extrac
       <p class="prompt-label">Type the pinyin, with tones</p>
       <div class="prompt-meaning">{gloss(w, lang)}</div>
       <p class="prompt-hint">
-        {w.pos_en} · {chars} character{chars > 1 ? 's' : ''}
+        {w.pos_en}, {chars} character{chars > 1 ? 's' : ''}
       </p>
       <input
         ref={input}
@@ -167,7 +167,7 @@ function PinyinType({ drill, lang, onAnswer, answered }: Props & { drill: Extrac
         disabled={!!answered}
         enterkeyhint="done"
       />
-      {result === 'tones' && <p class="note">Right sounds — check the tones.</p>}
+      {result === 'tones' && <p class="notice">The sounds are right. Check the tones.</p>}
       {answered ? (
         <div class="reveal">
           <Hanzi word={w} size="lg" /> <Pinyin text={w.pinyin} />
@@ -177,7 +177,7 @@ function PinyinType({ drill, lang, onAnswer, answered }: Props & { drill: Extrac
           Check
         </button>
       )}
-      <p class="prompt-hint small">Tones: 1 ā · 2 á · 3 ǎ · 4 à · neutral: no number. Type ü as v.</p>
+      <p class="prompt-hint small">Tone numbers: 1 ā, 2 á, 3 ǎ, 4 à. No number for neutral. Type ü as v.</p>
     </form>
   )
 }
@@ -223,7 +223,7 @@ function GrammarChoice({ drill, lang, onAnswer, answered }: Props & { drill: Ext
   const masked = ex.zh.slice(0, at) + '＿＿' + ex.zh.slice(at + ex.focus.length)
   return (
     <div class="drill">
-      <p class="prompt-label">Grammar · {grammar.title}</p>
+      <p class="prompt-label">{grammar.title}</p>
       <div class="prompt-sentence" lang="zh-CN">
         {answered ? <Sentence ex={ex} /> : <span class="sentence">{masked}</span>}
       </div>
@@ -263,7 +263,7 @@ function Builder({ drill, lang, onAnswer, answered }: Props & { drill: Extract<D
   }
   return (
     <div class="drill">
-      <p class="prompt-label">{drill.grammar ? `Grammar · ${drill.grammar.title}` : 'Build the sentence'}</p>
+      <p class="prompt-label">{drill.grammar ? drill.grammar.title : 'Build the sentence'}</p>
       <p class="prompt-translation big">{exGloss(drill.ex, lang)}</p>
       <div class={`build-line ${answered ? (answered.correct ? 'is-correct' : 'is-wrong') : ''}`} lang="zh-CN">
         {placed.length === 0 && <span class="build-placeholder">Tap the words in order</span>}
@@ -327,7 +327,7 @@ export function TeachWord({ word, lang, onNext }: { word: Word; lang: GlossLang;
 export function TeachGrammar({ grammar, lang, onNext }: { grammar: Grammar; lang: GlossLang; onNext: () => void }) {
   return (
     <div class="drill teach">
-      <p class="prompt-label">New grammar · HSK {grammar.level}</p>
+      <p class="prompt-label">New grammar, HSK {grammar.level}</p>
       <h2 class="g-title">{grammar.title}</h2>
       <div class="g-pattern" lang="zh-CN">
         {grammar.pattern}

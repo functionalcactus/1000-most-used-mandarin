@@ -3,6 +3,7 @@ import { hanziTones, syllabify } from '../lib/pinyin'
 import { speak, ttsAvailable } from '../lib/audio'
 import type { Example, GlossLang, Word } from '../lib/data'
 import { exGloss, showHanzi } from '../lib/data'
+import { Icon } from './art'
 
 export function Hanzi({ word, size = 'xl' }: { word: Word; size?: 'xl' | 'lg' | 'md' }) {
   const text = showHanzi(word)
@@ -33,10 +34,7 @@ export function SpeakButton({ text, big }: { text: string; big?: boolean }) {
   if (!ttsAvailable()) return null
   return (
     <button class={`speak ${big ? 'speak-big' : ''}`} onClick={() => speak(text)} aria-label="Play audio">
-      <svg viewBox="0 0 24 24" width={big ? 40 : 22} height={big ? 40 : 22} aria-hidden="true">
-        <path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor" />
-        <path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-      </svg>
+      <Icon name="speaker" size={big ? 34 : 20} />
     </button>
   )
 }

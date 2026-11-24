@@ -4,7 +4,7 @@ import { db, setKV } from '../lib/db'
 import { seededCard } from '../lib/srs'
 import { meaningDrill } from '../lib/session'
 import { speak } from '../lib/audio'
-import { Bao } from './art'
+import { Seal } from './art'
 import { Hanzi, Pinyin } from './bits'
 
 /**
@@ -63,17 +63,17 @@ export function Placement({ lang, onDone }: { lang: GlossLang; onDone: () => voi
   if (phase.kind === 'intro')
     return (
       <div class="screen center placement">
-        <Bao mood="wave" size={120} />
-        <h1>Let's find your level</h1>
+        <p class="kai-hero" lang="zh-CN" aria-hidden="true">水平</p>
+        <h1>Find your level</h1>
         <p class="muted">
-          About 5–8 minutes. Tap "I know it" only if you know the meaning without guessing. Words you already know come back as
-          light reviews over the next few weeks, so nothing is skipped for good.
+          Takes 5–8 minutes. Tap I know it only when you know the meaning without guessing. Words you know come back as light
+          reviews over the next few weeks, so nothing is skipped for good.
         </p>
         <button class="btn btn-primary" onClick={() => startLevel(1)}>
           Start
         </button>
         <button class="btn btn-ghost" onClick={async () => { await setKV('placementDone', true); onDone() }}>
-          I'm a total beginner — skip
+          Skip, I’m starting from zero
         </button>
       </div>
     )
@@ -88,7 +88,7 @@ export function Placement({ lang, onDone }: { lang: GlossLang; onDone: () => voi
     }
     return (
       <RateCard
-        title={`HSK ${phase.level} · sample`}
+        title={`HSK ${phase.level}`}
         progress={`${phase.i + 1} / ${phase.words.length}`}
         word={w}
         onRate={rate}
@@ -101,7 +101,7 @@ export function Placement({ lang, onDone }: { lang: GlossLang; onDone: () => voi
     return (
       <CheckCard
         key={`${phase.level}-${phase.i}`}
-        title={`HSK ${phase.level} · quick check`}
+        title={`HSK ${phase.level} check`}
         word={w}
         lang={lang}
         onResult={(ok) => {
@@ -138,7 +138,7 @@ export function Placement({ lang, onDone }: { lang: GlossLang; onDone: () => voi
     }
     return (
       <RateCard
-        title={`HSK ${phase.level} · sorting the rest`}
+        title={`HSK ${phase.level}, the rest`}
         progress={`${phase.i + 1} / ${phase.words.length}`}
         word={w}
         onRate={(k) => {
@@ -158,7 +158,7 @@ export function Placement({ lang, onDone }: { lang: GlossLang; onDone: () => voi
     return (
       <CheckCard
         key={'spot' + phase.word.id}
-        title={`HSK ${phase.level} · spot check`}
+        title={`HSK ${phase.level} check`}
         word={phase.word}
         lang={lang}
         onResult={(ok) => {
@@ -177,20 +177,20 @@ export function Placement({ lang, onDone }: { lang: GlossLang; onDone: () => voi
   const total = Object.values(result).reduce((a, b) => a + b, 0)
   return (
     <div class="screen center placement">
-      <Bao mood="cheer" size={120} />
-      <h1>You're set</h1>
+      <Seal char="定" size={88} stamp />
+      <h1>Your starting point is set</h1>
       <p class="muted">
         {total > 0
-          ? `You already know about ${total} of the 1,000 words. They'll come back as light reviews over the next few weeks.`
+          ? `You know about ${total} of the 1,000 words. They’ll come back as light reviews over the next few weeks.`
           : 'Starting from the first words of HSK 1.'}
       </p>
-      <div class="wrap-stats">
+      <dl class="wrap-stats">
         {[1, 2, 3].map((l) => (
-          <div><b>{result[l] || 0}</b><span>HSK {l}</span></div>
+          <div><dt>HSK {l}</dt><dd>{result[l] || 0}</dd></div>
         ))}
-      </div>
+      </dl>
       <button class="btn btn-primary" onClick={onDone}>
-        Go to today
+        Start learning
       </button>
     </div>
   )
@@ -222,7 +222,7 @@ function RateCard({ title, progress, word, onRate, onStop }: { title: string; pr
       </div>
       {onStop && (
         <button class="btn btn-ghost" onClick={onStop}>
-          Stop sorting — teach me the rest
+          Stop sorting and teach me the rest
         </button>
       )}
     </div>

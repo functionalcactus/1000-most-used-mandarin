@@ -7,17 +7,17 @@ export default defineConfig({
   plugins: [
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['icons/*.png', 'icons/*.svg'],
+      includeAssets: ['icons/*.png', 'icons/*.svg', 'fonts/*.woff2'],
       manifest: {
-        name: 'Bao · HSK Basics',
-        short_name: 'Bao HSK',
+        name: 'HSK Basics',
+        short_name: 'HSK Basics',
         description: 'Daily Mandarin practice: the 1,000 words of new HSK 1–3 and core grammar.',
         lang: 'en',
         start_url: '/',
         display: 'standalone',
         orientation: 'portrait',
-        background_color: '#f6efe1',
-        theme_color: '#f6efe1',
+        background_color: '#f5f5f7',
+        theme_color: '#f5f5f7',
         icons: [
           { src: '/icons/icon-192.png', sizes: '192x192', type: 'image/png' },
           { src: '/icons/icon-512.png', sizes: '512x512', type: 'image/png' },

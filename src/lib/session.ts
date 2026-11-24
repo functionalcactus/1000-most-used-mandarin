@@ -210,9 +210,28 @@ export async function getStreak(): Promise<Streak> {
   }
   return s
 }
+/** Days with a finished run (YYYY-MM-DD), newest last. */
+export const getDaysDone = () => getKV<string[]>('daysDone', [])
+
+/** The current week, Monday first, with whether each day has a finished run. */
+export async function weekStrip() {
+  const done = new Set(await getDaysDone())
+  const now = new Date()
+  const monday = new Date(now)
+  monday.setDate(now.getDate() - ((now.getDay() + 6) % 7))
+  return ['一', '二', '三', '四', '五', '六', '日'].map((label, i) => {
+    const d = new Date(monday)
+    d.setDate(monday.getDate() + i)
+    const key = today(d)
+    return { label, key, done: done.has(key), isToday: key === today(now), future: d > now && key !== today(now) }
+  })
+}
+
 export async function completeRunDay() {
   const s = await getStreak()
   const t = today()
+  const days = await getDaysDone()
+  if (!days.includes(t)) await setKV('daysDone', [...days, t].slice(-120))
   if (s.last === t) return s
   const gap = s.last ? daysBetween(s.last, t) : 1
   let count = s.count
