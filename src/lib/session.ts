@@ -4,12 +4,11 @@ import {
   type Example, type Grammar, type GrammarExample, type GlossLang, type Word
 } from './data'
 import { newCard, cardId } from './srs'
-import { hasChineseVoice } from './audio'
 
 // ---------- settings ----------
 export type Budget = 5 | 10 | 15 | 20
-export type Settings = { budget: Budget; gloss: GlossLang; retention: number }
-export const DEFAULT_SETTINGS: Settings = { budget: 5, gloss: 'both', retention: 0.9 }
+export type Settings = { budget: Budget; gloss: GlossLang; retention: number; sound: boolean }
+export const DEFAULT_SETTINGS: Settings = { budget: 5, gloss: 'both', retention: 0.9, sound: true }
 export const getSettings = async () => ({ ...DEFAULT_SETTINGS, ...(await getKV<Partial<Settings>>('settings', {})) })
 export const saveSettings = (s: Settings) => setKV('settings', s)
 
@@ -107,7 +106,7 @@ function grammarDrill(g: Grammar): Drill {
 export function drillForCard(card: CardRow): Drill {
   if (card.facet === 'gram') return grammarDrill(GRAMMAR_BY_ID.get(card.item.slice(1))!)
   const w = WORD_BY_ID.get(Number(card.item.slice(1)))!
-  if (card.facet === 'lis') return hasChineseVoice() ? listenDrill(w) : meaningDrill(w)
+  if (card.facet === 'lis') return listenDrill(w) // shown as audio, or as pinyin when sound is off
   if (card.facet === 'pro') return { kind: 'pinyin', word: w }
   if (card.stability >= 7 && Math.random() < 0.4) return clozeDrill(w) || meaningDrill(w)
   return meaningDrill(w)

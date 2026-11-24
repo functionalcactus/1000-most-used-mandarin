@@ -2,10 +2,10 @@ import { useEffect, useMemo, useState } from 'preact/hooks'
 import { db, exportAll, importAll, resetAll, type CardRow } from '../lib/db'
 import { PLAN, dueCards, getStreak, saveSettings, syncUnlocks, today, weekStrip, type Budget, type Settings, type Streak } from '../lib/session'
 import { TEACH_ORDER, WORDS, GRAMMAR, gloss, plainHanzi, sayWord, type GlossLang, type Word } from '../lib/data'
-import { hasChineseVoice, speak } from '../lib/audio'
+import { hasChineseVoice, speak, speakAuto } from '../lib/audio'
 import { setRetention } from '../lib/srs'
 import { Icon, Seal } from './art'
-import { ExampleBlock, Hanzi, LevelBadge, Pinyin, SpeakButton } from './bits'
+import { ExampleBlock, Hanzi, LevelBadge, Pinyin, SpeakButton, Switch } from './bits'
 
 // ---------- shared: word memory state ----------
 export type MemState = 'unseen' | 'learning' | 'young' | 'mature'
@@ -97,6 +97,16 @@ export function Today({ settings, onStart, onSettings }: { settings: Settings; o
             </button>
           ))}
         </div>
+        <Switch
+          label="Sound"
+          hint={settings.sound ? 'Listening drills play audio' : 'Listening drills show pinyin instead'}
+          checked={settings.sound}
+          onChange={async (on) => {
+            const s = { ...settings, sound: on }
+            await saveSettings(s)
+            onSettings(s)
+          }}
+        />
         <button class={`btn ${doneToday ? 'btn-secondary' : 'btn-primary'} btn-block`} onClick={() => onStart(settings.budget)}>
           {doneToday ? 'Practise again' : 'Start today’s run'}
         </button>
@@ -262,7 +272,7 @@ function GrammarList({ lang }: { lang: GlossLang }) {
 }
 
 export function WordSheet({ word, lang, card, onClose }: { word: Word; lang: GlossLang; card?: CardRow; onClose: () => void }) {
-  useEffect(() => speak(sayWord(word)), [word])
+  useEffect(() => speakAuto(sayWord(word)), [word])
   const due = card ? new Date(card.due) : null
   return (
     <div class="sheet-backdrop" onClick={onClose}>
@@ -354,6 +364,12 @@ export function SettingsView({ settings, onSettings, onRetakePlacement }: { sett
       </section>
       <section>
         <h2>Audio</h2>
+        <Switch
+          label="Sound"
+          hint="Off: listening drills show pinyin, and nothing plays by itself. Handy without earphones."
+          checked={settings.sound}
+          onChange={(on) => set({ sound: on })}
+        />
         <button class="btn btn-secondary" onClick={() => speak('你好，我们开始学习吧！')}>Test the voice</button>
       </section>
       <section>

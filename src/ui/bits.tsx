@@ -86,3 +86,16 @@ export function Card({ children, class: cls = '' }: { children: ComponentChildre
 export function LevelBadge({ level }: { level: number }) {
   return <span class={`badge badge-l${level}`}>HSK {level}</span>
 }
+
+/** iOS-style on/off switch. */
+export function Switch({ label, hint, checked, onChange }: { label: string; hint?: string; checked: boolean; onChange: (v: boolean) => void }) {
+  return (
+    <label class="switch-row">
+      <span class="switch-text">
+        <span>{label}</span>
+        {hint && <span class="switch-hint">{hint}</span>}
+      </span>
+      <input type="checkbox" role="switch" class="switch" checked={checked} onChange={(e) => onChange((e.target as HTMLInputElement).checked)} />
+    </label>
+  )
+}

@@ -14,11 +14,12 @@ export function Seal({ char, size = 28, stamp = false, faded = false }: { char: 
   )
 }
 
-type IconName = 'close' | 'speaker' | 'today' | 'progress' | 'words' | 'settings' | 'check' | 'cross' | 'search' | 'chevron'
+type IconName = 'close' | 'speaker' | 'speakerOff' | 'today' | 'progress' | 'words' | 'settings' | 'check' | 'cross' | 'search' | 'chevron'
 
 const PATHS: Record<IconName, string> = {
   close: 'M6 6l12 12M18 6L6 18',
   speaker: 'M4 9.5v5h3.5L12 18.5v-13L7.5 9.5H4zM15.5 9a4.2 4.2 0 0 1 0 6M18 6.5a7.8 7.8 0 0 1 0 11',
+  speakerOff: 'M4 9.5v5h3.5L12 18.5v-13L7.5 9.5H4zM16 9.5l5 5M21 9.5l-5 5',
   today: 'M5 6.5h14v13H5zM5 10.5h14M9 4v4M15 4v4',
   progress: 'M5 5h5v5H5zM14 5h5v5h-5zM5 14h5v5H5zM14 14h5v5h-5z',
   words: 'M6 4.5h10.5a1.5 1.5 0 0 1 1.5 1.5v13.5H7.5A1.5 1.5 0 0 1 6 18zM6 18a1.5 1.5 0 0 1 1.5-1.5H18M9.5 8.5h5',

@@ -23,6 +23,20 @@ export function hasChineseVoice() {
   return !!voice
 }
 
+let soundOn = true
+/** Sound off: nothing plays by itself (taps on a speaker button still play). */
+export function setSoundOn(on: boolean) {
+  soundOn = on
+  if (!on && ttsAvailable()) speechSynthesis.cancel()
+}
+export const isSoundOn = () => soundOn
+
+/** Automatic playback (after answers, on new words): skipped when sound is off. */
+export function speakAuto(text: string) {
+  if (soundOn) speak(text)
+}
+
+/** Playback the learner asked for by tapping. */
 export function speak(text: string, rate = 0.85) {
   if (!ttsAvailable()) return
   speechSynthesis.cancel()

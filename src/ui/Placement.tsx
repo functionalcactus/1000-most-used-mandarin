@@ -3,7 +3,7 @@ import { WORDS, TEACHABLE_GRAMMAR, gloss, sayWord, shuffle, type GlossLang, type
 import { db, setKV } from '../lib/db'
 import { seededCard } from '../lib/srs'
 import { meaningDrill } from '../lib/session'
-import { speak } from '../lib/audio'
+import { speakAuto } from '../lib/audio'
 import { Seal } from './art'
 import { Hanzi, Pinyin } from './bits'
 
@@ -252,7 +252,7 @@ function CheckCard({ title, word, lang, onResult }: { title: string; word: Word;
               disabled={!!chosen}
               onClick={() => {
                 setChosen(o)
-                speak(sayWord(word))
+                speakAuto(sayWord(word))
                 setTimeout(() => onResult(o.id === word.id), 900)
               }}
             >

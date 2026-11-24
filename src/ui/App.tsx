@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'preact/hooks'
 import { getKV, requestPersist, setKV } from '../lib/db'
-import { getSettings, type Settings } from '../lib/session'
+import { getSettings, saveSettings, type Settings } from '../lib/session'
+import { setSoundOn } from '../lib/audio'
 import { setRetention } from '../lib/srs'
 import { Run } from './Run'
 import { Placement } from './Placement'
@@ -20,10 +21,15 @@ export function App() {
     requestPersist()
     Promise.all([getSettings(), getKV('placementDone', false)]).then(([s, p]) => {
       setRetention(s.retention)
+      setSoundOn(s.sound)
       setSettings(s)
       setPlaced(p)
     })
   }, [])
+
+  useEffect(() => {
+    if (settings) setSoundOn(settings.sound)
+  }, [settings?.sound])
 
   if (!settings || placed === null)
     return (
@@ -37,6 +43,10 @@ export function App() {
       <Run
         key={runKey}
         settings={settings}
+        onSettings={async (s) => {
+          await saveSettings(s)
+          setSettings(s)
+        }}
         onExit={() => {
           setRunning(false)
           setTab('today')

@@ -12,7 +12,7 @@ import { gloss, type GlossLang } from '../lib/data'
 type RunStep = Step | { type: 'retry'; drill: Drill }
 type Stats = { done: number; correct: number; newWords: number; newGrammar: number; reviews: number }
 
-export function Run({ settings, onExit }: { settings: Settings; onExit: () => void }) {
+export function Run({ settings, onExit, onSettings }: { settings: Settings; onExit: () => void; onSettings: (s: Settings) => void }) {
   const [plan, setPlan] = useState<RunPlan | null>(null)
   const [queue, setQueue] = useState<RunStep[]>([])
   const [i, setI] = useState(0)
@@ -115,7 +115,16 @@ export function Run({ settings, onExit }: { settings: Settings; onExit: () => vo
           <div class="timebar-fill" style={{ width: `${progress * 100}%` }} />
         </div>
         <span class="clock" aria-label="Time left">{clock}</span>
+        <button
+          class={`icon-btn ${settings.sound ? '' : 'is-off'}`}
+          aria-pressed={settings.sound}
+          aria-label={settings.sound ? 'Sound on. Tap to switch listening to pinyin' : 'Sound off. Tap to turn listening back on'}
+          onClick={() => onSettings({ ...settings, sound: !settings.sound })}
+        >
+          <Icon name={settings.sound ? 'speaker' : 'speakerOff'} size={18} />
+        </button>
       </header>
+      {!settings.sound && <p class="sound-note">Sound off: listening shows pinyin instead</p>}
       {timeUp && <div class="timeup">Time’s up. Finishing this one.</div>}
 
       <main class="run-body" key={i}>
@@ -124,7 +133,7 @@ export function Run({ settings, onExit }: { settings: Settings; onExit: () => vo
         {(step.type === 'review' || step.type === 'ladder' || step.type === 'challenge' || step.type === 'retry') && (
           <>
             {step.type === 'retry' && <p class="retry-tag">One more try</p>}
-            <DrillView drill={step.drill} lang={lang} onAnswer={onAnswer} answered={answered} />
+            <DrillView drill={step.drill} lang={lang} onAnswer={onAnswer} answered={answered} sound={settings.sound} />
           </>
         )}
       </main>

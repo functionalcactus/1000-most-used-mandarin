@@ -3,12 +3,12 @@ import type { Drill } from '../lib/session'
 import { tilesFor } from '../lib/session'
 import { WORDS, exGloss, gloss, plainHanzi, sayWord, type GlossLang, type Grammar, type Word } from '../lib/data'
 import { checkPinyin } from '../lib/pinyin'
-import { speak } from '../lib/audio'
+import { hasChineseVoice, speakAuto } from '../lib/audio'
 import { ExampleBlock, Hanzi, Pinyin, Sentence, SpeakButton } from './bits'
 
 /** close = right letters, wrong tones (counts as a miss, graded Hard on reviews) */
 export type Answer = { correct: boolean; close?: boolean; ms: number }
-type Props = { drill: Drill; lang: GlossLang; onAnswer: (a: Answer) => void; answered: Answer | null }
+type Props = { drill: Drill; lang: GlossLang; onAnswer: (a: Answer) => void; answered: Answer | null; sound: boolean }
 
 export function DrillView(p: Props) {
   const d = p.drill
@@ -78,7 +78,7 @@ function MeaningPick({ drill, lang, onAnswer, answered }: Props & { drill: Extra
         chosen={chosen}
         onPick={(w) => {
           setChosen(w)
-          speak(sayWord(drill.word))
+          speakAuto(sayWord(drill.word))
           onAnswer({ correct: w.id === drill.word.id, ms: ms() })
         }}
       />
@@ -86,19 +86,28 @@ function MeaningPick({ drill, lang, onAnswer, answered }: Props & { drill: Extra
   )
 }
 
-function ListenPick({ drill, onAnswer, answered }: Props & { drill: Extract<Drill, { kind: 'listen' }> }) {
+function ListenPick({ drill, onAnswer, answered, sound }: Props & { drill: Extract<Drill, { kind: 'listen' }> }) {
   const ms = useTimer()
   const [chosen, setChosen] = useState<Word | null>(null)
+  // sound off or no Chinese voice: show the pinyin instead of playing it
+  const byEar = sound && hasChineseVoice()
   useEffect(() => {
-    const t = setTimeout(() => speak(sayWord(drill.word)), 250)
+    if (!byEar) return
+    const t = setTimeout(() => speakAuto(sayWord(drill.word)), 250)
     return () => clearTimeout(t)
-  }, [drill])
+  }, [drill, byEar])
   return (
     <div class="drill">
-      <p class="prompt-label">Choose the word you hear</p>
-      <div class="prompt-audio">
-        <SpeakButton text={sayWord(drill.word)} big />
-      </div>
+      <p class="prompt-label">{byEar ? 'Choose the word you hear' : 'Choose the characters for this pinyin'}</p>
+      {byEar ? (
+        <div class="prompt-audio">
+          <SpeakButton text={sayWord(drill.word)} big />
+        </div>
+      ) : (
+        <div class="prompt-pinyin">
+          <Pinyin text={drill.word.pinyin} />
+        </div>
+      )}
       <Options
         cols={2}
         items={drill.options}
@@ -144,7 +153,7 @@ function PinyinType({ drill, lang, onAnswer, answered }: Props & { drill: Extrac
       if (r === 'tones') best = 'tones'
     }
     setResult(best)
-    speak(sayWord(w))
+    speakAuto(sayWord(w))
     onAnswer({ correct: best === 'correct', close: best === 'tones', ms: ms() })
   }
   return (
@@ -207,7 +216,7 @@ function Cloze({ drill, lang, onAnswer, answered }: Props & { drill: Extract<Dri
         chosen={chosen}
         onPick={(o) => {
           setChosen(o)
-          speak(drill.ex.zh)
+          speakAuto(drill.ex.zh)
           onAnswer({ correct: o === target, ms: ms() })
         }}
       />
@@ -241,7 +250,7 @@ function GrammarChoice({ drill, lang, onAnswer, answered }: Props & { drill: Ext
         chosen={chosen}
         onPick={(o) => {
           setChosen(o)
-          speak(ex.zh)
+          speakAuto(ex.zh)
           onAnswer({ correct: o === ex.focus, ms: ms() })
         }}
       />
@@ -258,7 +267,7 @@ function Builder({ drill, lang, onAnswer, answered }: Props & { drill: Extract<D
   const built = placed.map((i) => drill.tiles[i]).join('')
   const ok = built === correctOrder.join('')
   const check = () => {
-    speak(drill.ex.zh)
+    speakAuto(drill.ex.zh)
     onAnswer({ correct: ok, ms: ms() })
   }
   return (
@@ -298,7 +307,7 @@ function Builder({ drill, lang, onAnswer, answered }: Props & { drill: Extract<D
 // ---------- teaching cards ----------
 export function TeachWord({ word, lang, onNext }: { word: Word; lang: GlossLang; onNext: () => void }) {
   useEffect(() => {
-    const t = setTimeout(() => speak(sayWord(word)), 300)
+    const t = setTimeout(() => speakAuto(sayWord(word)), 300)
     return () => clearTimeout(t)
   }, [word])
   return (
