@@ -1,9 +1,9 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   // Static app served by Cloudflare Workers (static asset requests are free).
-  "name": "bao-hsk",
+  "name": "qian",
   "compatibility_date": "2026-11-20",
-  // public address: bao-hsk.<your-subdomain>.workers.dev
+  // public address: qian.<your-subdomain>.workers.dev
   "workers_dev": true,
   "assets": {
     "directory": "./dist",
