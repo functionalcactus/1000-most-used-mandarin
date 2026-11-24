@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'preact/hooks'
 import { db, exportAll, importAll, resetAll, type CardRow } from '../lib/db'
 import { PLAN, dueCards, getStreak, saveSettings, syncUnlocks, today, weekStrip, type Budget, type Settings, type Streak } from '../lib/session'
-import { TEACH_ORDER, WORDS, GRAMMAR, gloss, plainHanzi, type GlossLang, type Word } from '../lib/data'
+import { TEACH_ORDER, WORDS, GRAMMAR, gloss, plainHanzi, sayWord, type GlossLang, type Word } from '../lib/data'
 import { hasChineseVoice, speak } from '../lib/audio'
 import { setRetention } from '../lib/srs'
 import { Icon, Seal } from './art'
@@ -262,7 +262,7 @@ function GrammarList({ lang }: { lang: GlossLang }) {
 }
 
 export function WordSheet({ word, lang, card, onClose }: { word: Word; lang: GlossLang; card?: CardRow; onClose: () => void }) {
-  useEffect(() => speak(plainHanzi(word)), [word])
+  useEffect(() => speak(sayWord(word)), [word])
   const due = card ? new Date(card.due) : null
   return (
     <div class="sheet-backdrop" onClick={onClose}>
@@ -272,7 +272,7 @@ export function WordSheet({ word, lang, card, onClose }: { word: Word; lang: Glo
           <Hanzi word={word} />
           <div class="teach-py">
             <Pinyin text={word.pinyin} />
-            <SpeakButton text={plainHanzi(word)} />
+            <SpeakButton text={sayWord(word)} />
           </div>
           <div class="teach-gloss">{word.en}</div>
           {word.th && <div class="teach-gloss th">{word.th}</div>}

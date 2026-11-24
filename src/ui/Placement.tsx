@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'preact/hooks'
-import { WORDS, TEACHABLE_GRAMMAR, gloss, plainHanzi, shuffle, type GlossLang, type Word } from '../lib/data'
+import { WORDS, TEACHABLE_GRAMMAR, gloss, sayWord, shuffle, type GlossLang, type Word } from '../lib/data'
 import { db, setKV } from '../lib/db'
 import { seededCard } from '../lib/srs'
 import { meaningDrill } from '../lib/session'
@@ -252,7 +252,7 @@ function CheckCard({ title, word, lang, onResult }: { title: string; word: Word;
               disabled={!!chosen}
               onClick={() => {
                 setChosen(o)
-                speak(plainHanzi(word))
+                speak(sayWord(word))
                 setTimeout(() => onResult(o.id === word.id), 900)
               }}
             >

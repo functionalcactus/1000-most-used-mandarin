@@ -88,6 +88,40 @@ for path in sorted(glob.glob(os.path.join(ROOT, 'content', 'grammar[0-9].txt')))
         gcontent[gid]['ex'].append({'zh': zh, 'en': en, 'th': th, 'focus': focus,
                                     'dis': dis.split(','), 'tk': toks})
 
+# ---- what the speech voice should say for each word ----
+# A lone polyphonic character (还 hái / huán) is a guess for the voice, and it often guesses wrong.
+# For those words, voice a stand-in character with ONE reading and the same sound and tone (还 hái -> 孩).
+from pypinyin.pinyin_dict import pinyin_dict  # noqa: E402
+
+def readings(ch):
+    return pinyin_dict.get(ord(ch), '').split(',') if ord(ch) in pinyin_dict else []
+
+# character frequencies from jieba's dictionary: stand-ins must be everyday characters
+import jieba  # noqa: E402
+freq = {}  # how often each character appears across all words in the dictionary
+for line in open(os.path.join(os.path.dirname(jieba.__file__), 'dict.txt'), encoding='utf-8'):
+    parts = line.split()
+    if len(parts) >= 2:
+        for ch in parts[0]:
+            freq[ch] = freq.get(ch, 0) + int(parts[1])
+TOP = 3000  # stand-ins come from the 3,000 most common characters
+monophonic = {}
+for ch, _ in sorted(freq.items(), key=lambda kv: -kv[1])[:TOP]:
+    r = readings(ch)
+    if len(r) == 1 and r[0] not in monophonic:
+        monophonic[r[0]] = ch
+
+NEUTRAL_SAY = {'de': '的'}  # 地 / 得 read as the particle de
+say_for = {}
+for w in words:
+    h = re.sub(r'（[^）]*）', '', w['hanzi'])
+    if len(h) != 1 or len(readings(h)) < 2:
+        continue
+    target = w['pinyin'].split('/')[0].strip()
+    stand_in = monophonic.get(target) or NEUTRAL_SAY.get(target)
+    if stand_in and stand_in != h:
+        say_for[w['id']] = stand_in
+
 grammar = []
 for g in gindex:
     item = dict(g)
@@ -107,6 +141,8 @@ for w in words:
     for k in ('sense', 'th', 'theme', 'ex'):
         if w.get(k):
             o[k] = w[k]
+    if w['id'] in say_for:
+        o['say'] = say_for[w['id']]
     out_words.append(o)
 
 os.makedirs(os.path.join(ROOT, 'src', 'data'), exist_ok=True)
@@ -116,4 +152,4 @@ json.dump(grammar, open(os.path.join(ROOT, 'src', 'data', 'grammar.json'), 'w', 
           ensure_ascii=False, separators=(',', ':'))
 full = sum(1 for w in out_words if 'ex' in w)
 gfull = sum(1 for g in grammar if 'ex' in g)
-print(f'words: {len(out_words)} ({full} with Thai + examples) · grammar: {len(grammar)} ({gfull} written)')
+print(f'words: {len(out_words)} ({full} with Thai + examples) · grammar: {len(grammar)} ({gfull} written) · voice stand-ins: {len(say_for)}')

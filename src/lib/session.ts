@@ -46,9 +46,15 @@ export type Step =
 export type RunPlan = { steps: Step[]; dueCount: number; newWords: Word[]; newGrammar: Grammar | null; catchUp: boolean }
 
 // ---------- helpers ----------
-function distractorWords(w: Word, n = 3): Word[] {
+const soundOf = (w: Word) => w.pinyin.toLowerCase().replace(/[\s'’()]/g, '')
+
+function distractorWords(w: Word, n = 3, differentSound = false): Word[] {
   const firstPos = w.pos_en.split(',')[0]
-  const pool = WORDS.filter((x) => x.id !== w.id && x.level <= Math.max(w.level, 1) + 1 && x.en !== w.en && x.hanzi !== w.hanzi)
+  const pool = WORDS.filter(
+    (x) =>
+      x.id !== w.id && x.level <= Math.max(w.level, 1) + 1 && x.en !== w.en && x.hanzi !== w.hanzi &&
+      (!differentSound || soundOf(x) !== soundOf(w))
+  )
   const samePos = shuffle(pool.filter((x) => x.pos_en.split(',')[0] === firstPos))
   const out: Word[] = []
   for (const x of [...samePos, ...shuffle(pool)]) {
@@ -78,7 +84,8 @@ export function meaningDrill(w: Word): Drill {
   return { kind: 'meaning', word: w, options: shuffle([w, ...distractorWords(w)]) }
 }
 function listenDrill(w: Word): Drill {
-  return { kind: 'listen', word: w, options: shuffle([w, ...distractorWords(w)]) }
+  // never offer a word that sounds the same (是 / 事): it couldn't be told apart by ear
+  return { kind: 'listen', word: w, options: shuffle([w, ...distractorWords(w, 3, true)]) }
 }
 function clozeDrill(w: Word): Drill | null {
   const exs = clozeExamples(w)

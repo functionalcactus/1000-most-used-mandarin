@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks'
 import type { Drill } from '../lib/session'
 import { tilesFor } from '../lib/session'
-import { WORDS, exGloss, gloss, plainHanzi, type GlossLang, type Grammar, type Word } from '../lib/data'
+import { WORDS, exGloss, gloss, plainHanzi, sayWord, type GlossLang, type Grammar, type Word } from '../lib/data'
 import { checkPinyin } from '../lib/pinyin'
 import { speak } from '../lib/audio'
 import { ExampleBlock, Hanzi, Pinyin, Sentence, SpeakButton } from './bits'
@@ -78,7 +78,7 @@ function MeaningPick({ drill, lang, onAnswer, answered }: Props & { drill: Extra
         chosen={chosen}
         onPick={(w) => {
           setChosen(w)
-          speak(plainHanzi(drill.word))
+          speak(sayWord(drill.word))
           onAnswer({ correct: w.id === drill.word.id, ms: ms() })
         }}
       />
@@ -90,14 +90,14 @@ function ListenPick({ drill, onAnswer, answered }: Props & { drill: Extract<Dril
   const ms = useTimer()
   const [chosen, setChosen] = useState<Word | null>(null)
   useEffect(() => {
-    const t = setTimeout(() => speak(plainHanzi(drill.word)), 250)
+    const t = setTimeout(() => speak(sayWord(drill.word)), 250)
     return () => clearTimeout(t)
   }, [drill])
   return (
     <div class="drill">
       <p class="prompt-label">Choose the word you hear</p>
       <div class="prompt-audio">
-        <SpeakButton text={plainHanzi(drill.word)} big />
+        <SpeakButton text={sayWord(drill.word)} big />
       </div>
       <Options
         cols={2}
@@ -144,7 +144,7 @@ function PinyinType({ drill, lang, onAnswer, answered }: Props & { drill: Extrac
       if (r === 'tones') best = 'tones'
     }
     setResult(best)
-    speak(plainHanzi(w))
+    speak(sayWord(w))
     onAnswer({ correct: best === 'correct', close: best === 'tones', ms: ms() })
   }
   return (
@@ -298,7 +298,7 @@ function Builder({ drill, lang, onAnswer, answered }: Props & { drill: Extract<D
 // ---------- teaching cards ----------
 export function TeachWord({ word, lang, onNext }: { word: Word; lang: GlossLang; onNext: () => void }) {
   useEffect(() => {
-    const t = setTimeout(() => speak(plainHanzi(word)), 300)
+    const t = setTimeout(() => speak(sayWord(word)), 300)
     return () => clearTimeout(t)
   }, [word])
   return (
@@ -308,7 +308,7 @@ export function TeachWord({ word, lang, onNext }: { word: Word; lang: GlossLang;
         <Hanzi word={word} />
         <div class="teach-py">
           <Pinyin text={word.pinyin} />
-          <SpeakButton text={plainHanzi(word)} />
+          <SpeakButton text={sayWord(word)} />
         </div>
         <div class="teach-gloss">{word.en}</div>
         {word.th && lang !== 'en' && <div class="teach-gloss th">{word.th}</div>}

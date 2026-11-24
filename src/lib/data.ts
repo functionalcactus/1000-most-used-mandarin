@@ -14,6 +14,8 @@ export type Word = {
   th?: string
   theme?: string
   ex?: Example[]
+  /** what the speech voice reads: a same-sounding stand-in for a lone polyphonic character (还 hái → 孩) */
+  say?: string
 }
 export type GrammarExample = Example & { focus: string; dis: string[] }
 export type Grammar = {
@@ -35,6 +37,8 @@ export const GRAMMAR_BY_ID = new Map(GRAMMAR.map((g) => [g.id, g]))
 /** Hanzi as shown: optional parts in brackets are dropped (没（有） → 没有 shown as 没(有)). */
 export const showHanzi = (w: Word) => w.hanzi.replace(/（/g, '(').replace(/）/g, ')')
 export const plainHanzi = (w: Word) => w.hanzi.replace(/（|）/g, '')
+/** Text for the voice to read for a word on its own. */
+export const sayWord = (w: Word) => w.say ?? plainHanzi(w)
 
 /** Teaching order: HSK 1 by theme (useful clusters first), then HSK 2 and 3 in list order. */
 const THEME_ORDER = [
