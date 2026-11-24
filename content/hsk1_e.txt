@@ -1,0 +1,50 @@
+201|it|มัน|people|我有一只猫，它很小。|I have a cat; it's very small.|ฉันมีแมวหนึ่งตัว มันตัวเล็กมาก|这是我的狗，它叫小白。|This is my dog; it's called Xiaobai.|นี่คือหมาของฉัน มันชื่อเสี่ยวไป๋
+202|she, her|เธอ, เขา (ผู้หญิง)|people|她是我姐姐。|She's my older sister.|เธอเป็นพี่สาวของฉัน|她很喜欢看书。|She really likes reading.|เธอชอบอ่านหนังสือมาก
+203|too; extremely|เกินไป, มาก|describe|这个太贵了！|This is too expensive!|อันนี้แพงเกินไป|今天太冷了。|It's so cold today.|วันนี้หนาวเกินไป
+204|they (male/mixed)|พวกเขา|people|他们是我的同学。|They're my classmates.|พวกเขาเป็นเพื่อนร่วมชั้นของฉัน|他们都在公司工作。|They all work at the company.|พวกเขาทำงานที่บริษัททุกคน
+205|they (things/animals)|พวกมัน|people|我有两只猫，它们都很漂亮。|I have two cats; they're both pretty.|ฉันมีแมวสองตัว พวกมันสวยทั้งคู่|那些狗是我的，它们很大。|Those dogs are mine; they're big.|หมาพวกนั้นเป็นของฉัน พวกมันตัวใหญ่มาก
+206|they (female)|พวกเธอ|people|她们是我的姐姐。|They're my older sisters.|พวกเธอเป็นพี่สาวของฉัน|她们在唱歌。|They're singing.|พวกเธอกำลังร้องเพลง
+207|day|วัน|time|我在北京住了三天。|I stayed in Beijing for three days.|ฉันอยู่ที่ปักกิ่งสามวัน|今天天气很好。|The weather is nice today.|วันนี้อากาศดี
+208|weather|อากาศ|weather|今天天气怎么样？|How's the weather today?|วันนี้อากาศเป็นยังไง|明天天气很冷。|It'll be cold tomorrow.|พรุ่งนี้อากาศหนาว
+209|to listen|ฟัง|actions|我喜欢听歌。|I like listening to songs.|ฉันชอบฟังเพลง|请听老师说。|Please listen to the teacher.|กรุณาฟังครูพูด
+210|to hear|ได้ยิน|actions|你听见了吗？|Did you hear it?|คุณได้ยินไหม|我没听见你说什么。|I didn't hear what you said.|ฉันไม่ได้ยินว่าคุณพูดอะไร
+211|classmate|เพื่อนร่วมชั้น|school|他是我的同学。|He's my classmate.|เขาเป็นเพื่อนร่วมชั้นของฉัน|同学们，你们好！|Hello, class!|สวัสดีนักเรียนทุกคน
+212|outside|ข้างนอก|places|外边很冷。|It's cold outside.|ข้างนอกหนาวมาก|我们在外边吃饭吧。|Let's eat outside.|เรากินข้าวข้างนอกกันเถอะ
+213|outside|ข้างนอก|places|孩子们在外边玩。|The kids are playing outside.|เด็กๆ กำลังเล่นอยู่ข้างนอก|外边下雨了。|It's raining outside.|ข้างนอกฝนตกแล้ว
+214|to play, have fun|เล่น, เที่ยว|actions|我们去北京玩吧。|Let's go to Beijing for fun.|เราไปเที่ยวปักกิ่งกันเถอะ|孩子在家里玩。|The child is playing at home.|เด็กกำลังเล่นอยู่ในบ้าน
+215|late|ดึก, สาย|time|太晚了，我们回家吧。|It's too late, let's go home.|ดึกแล้ว เรากลับบ้านกันเถอะ|对不起，我来晚了。|Sorry, I'm late.|ขอโทษ ฉันมาสาย
+216|dinner|อาหารเย็น|food|我们七点吃晚饭。|We have dinner at seven.|เรากินข้าวเย็นตอนเจ็ดโมง|你晚饭想吃什么？|What do you want for dinner?|มื้อเย็นคุณอยากกินอะไร
+217|evening|ตอนเย็น, กลางคืน|time|晚上我在家看电视。|In the evening I watch TV at home.|ตอนเย็นฉันดูทีวีที่บ้าน|明天晚上你有时间吗？|Are you free tomorrow evening?|พรุ่งนี้เย็นคุณว่างไหม
+218|hello (on the phone)|ฮัลโหล|phrases|喂，你好！|Hello? (on the phone)|ฮัลโหล สวัสดีครับ|喂，你在哪儿？|Hello, where are you?|ฮัลโหล คุณอยู่ที่ไหน
+219|to ask|ถาม|actions|我想问你一个问题。|I want to ask you a question.|ฉันอยากถามคุณสักข้อ|你去问老师吧。|Go ask the teacher.|คุณไปถามครูสิ
+220|question, problem|คำถาม, ปัญหา|school|你有问题吗？|Do you have any questions?|คุณมีคำถามไหม|没问题！|No problem!|ไม่มีปัญหา
+221|I, me|ฉัน, ผม|people|我是学生。|I'm a student.|ฉันเป็นนักเรียน|我很喜欢中国菜。|I really like Chinese food.|ฉันชอบอาหารจีนมาก
+222|we, us|พวกเรา|people|我们是好朋友。|We're good friends.|พวกเราเป็นเพื่อนสนิทกัน|我们去吃饭吧。|Let's go eat.|เราไปกินข้าวกันเถอะ
+223|five|ห้า|numbers|我五点下班。|I get off work at five.|ฉันเลิกงานตอนห้าโมง|这个苹果五块钱。|This apple is five yuan.|แอปเปิลลูกนี้ห้าหยวน
+224|lunch|อาหารกลางวัน|food|我们十二点吃午饭。|We have lunch at twelve.|เรากินข้าวเที่ยงตอนสิบสองโมง|你午饭吃了什么？|What did you have for lunch?|มื้อเที่ยงคุณกินอะไร
+225|down, below; next; to get off|ล่าง; ลง; หน้า (ถัดไป)|places|猫在桌子下边。|The cat is under the table.|แมวอยู่ใต้โต๊ะ|我下个月去中国。|I'm going to China next month.|เดือนหน้าฉันจะไปจีน
+226|to rain|ฝนตก|weather|外边下雨了。|It's raining outside.|ข้างนอกฝนตกแล้ว|明天会下雨吗？|Will it rain tomorrow?|พรุ่งนี้ฝนจะตกไหม
+227|to get off work|เลิกงาน|work|你几点下班？|What time do you get off work?|คุณเลิกงานกี่โมง|下班后我去超市。|After work I go to the supermarket.|เลิกงานแล้วฉันไปซูเปอร์มาร์เก็ต
+228|to finish class|เลิกเรียน|school|我们四点下课。|We finish class at four.|เราเลิกเรียนตอนสี่โมง|下课了，我们去吃饭吧。|Class is over, let's go eat.|เลิกเรียนแล้ว เราไปกินข้าวกันเถอะ
+229|to want; to think; to miss|อยาก; คิด; คิดถึง|actions|我想喝茶。|I'd like some tea.|ฉันอยากดื่มชา|我很想我妈妈。|I really miss my mom.|ฉันคิดถึงแม่มาก
+230|Mr.; husband|คุณ (ผู้ชาย); สามี|people|先生，您好！|Hello, sir!|สวัสดีครับคุณผู้ชาย|她先生是医生。|Her husband is a doctor.|สามีของเธอเป็นหมอ
+231|now|ตอนนี้|time|现在几点？|What time is it now?|ตอนนี้กี่โมง|我现在很忙。|I'm very busy right now.|ตอนนี้ฉันยุ่งมาก
+232|small, little|เล็ก|describe|我的房间很小。|My room is small.|ห้องของฉันเล็กมาก|这只小猫很漂亮。|This little cat is very pretty.|ลูกแมวตัวนี้สวยมาก
+233|child (friendly)|เด็กๆ, หนู|people|小朋友，你几岁了？|How old are you, little one?|หนูอายุกี่ขวบจ๊ะ|小朋友们在外边玩。|The little kids are playing outside.|เด็กๆ กำลังเล่นอยู่ข้างนอก
+234|hour|ชั่วโมง|time|我今天工作了八个小时。|I worked eight hours today.|วันนี้ฉันทำงานไปแปดชั่วโมง|坐火车要三个小时。|It takes three hours by train.|นั่งรถไฟต้องใช้เวลาสามชั่วโมง
+235|primary school|โรงเรียนประถม|school|我弟弟在小学上学。|My younger brother goes to primary school.|น้องชายฉันเรียนอยู่ชั้นประถม|这个小学很大。|This primary school is big.|โรงเรียนประถมนี้ใหญ่มาก
+236|primary school student|นักเรียนประถม|school|他是小学生。|He's a primary school student.|เขาเป็นนักเรียนประถม|小学生八点上课。|Primary school students start class at eight.|นักเรียนประถมเข้าเรียนตอนแปดโมง
+237|afternoon|ตอนบ่าย|time|下午我去超市。|I'm going to the supermarket in the afternoon.|ตอนบ่ายฉันจะไปซูเปอร์มาร์เก็ต|明天下午你在家吗？|Will you be home tomorrow afternoon?|พรุ่งนี้บ่ายคุณอยู่บ้านไหม
+238|to write|เขียน|actions|你会写汉字吗？|Can you write Chinese characters?|คุณเขียนอักษรจีนเป็นไหม|请写你的名字。|Please write your name.|กรุณาเขียนชื่อของคุณ
+239|some (measure)|บ้าง, จำนวนหนึ่ง|function|我买了一些水果。|I bought some fruit.|ฉันซื้อผลไม้มาบ้าง|这些是我的书。|These are my books.|เหล่านี้คือหนังสือของฉัน
+240|to thank; thanks|ขอบคุณ|phrases|谢谢你！|Thank you!|ขอบคุณนะ|谢谢老师！|Thank you, teacher!|ขอบคุณครับคุณครู
+241|to like|ชอบ|actions|我喜欢喝茶。|I like drinking tea.|ฉันชอบดื่มชา|你喜欢什么水果？|What fruit do you like?|คุณชอบผลไม้อะไร
+242|new|ใหม่|describe|这是我的新手机。|This is my new phone.|นี่คือมือถือเครื่องใหม่ของฉัน|他是新老师。|He's the new teacher.|เขาเป็นครูคนใหม่
+243|week|สัปดาห์|time|今天星期几？|What day of the week is it?|วันนี้วันอะไร|我下星期去北京。|I'm going to Beijing next week.|สัปดาห์หน้าฉันจะไปปักกิ่ง
+244|Sunday|วันอาทิตย์|time|星期日我在家休息。|On Sunday I rest at home.|วันอาทิตย์ฉันพักผ่อนที่บ้าน|今天是星期日。|Today is Sunday.|วันนี้วันอาทิตย์
+245|Sunday|วันอาทิตย์|time|星期天你想去哪儿？|Where do you want to go on Sunday?|วันอาทิตย์คุณอยากไปไหน|星期天商店人很多。|Shops are crowded on Sunday.|วันอาทิตย์ร้านค้าคนเยอะมาก
+246|to rest|พักผ่อน|actions|你太忙了，休息一下吧。|You're too busy; take a rest.|คุณยุ่งเกินไปแล้ว พักสักหน่อยเถอะ|星期天我在家休息。|On Sunday I rest at home.|วันอาทิตย์ฉันพักผ่อนอยู่บ้าน
+247|to learn, to study|เรียน|school|我在学汉语。|I'm learning Chinese.|ฉันกำลังเรียนภาษาจีน|你想学什么？|What do you want to learn?|คุณอยากเรียนอะไร
+248|snow|หิมะ|weather|外边下雪了！|It's snowing outside!|ข้างนอกหิมะตกแล้ว|北京的雪很漂亮。|The snow in Beijing is beautiful.|หิมะที่ปักกิ่งสวยมาก
+249|student|นักเรียน|school|我是学生。|I'm a student.|ฉันเป็นนักเรียน|这个学校有很多学生。|This school has lots of students.|โรงเรียนนี้มีนักเรียนเยอะมาก
+250|to study|เรียน, ศึกษา|school|我在大学学习汉语。|I study Chinese at university.|ฉันเรียนภาษาจีนที่มหาวิทยาลัย|他学习很好。|He's a good student.|เขาเรียนเก่ง

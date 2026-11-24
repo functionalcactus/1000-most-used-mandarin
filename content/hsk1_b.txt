@@ -1,0 +1,50 @@
+51|restaurant; hotel|ร้านอาหาร, โรงแรม|places|这个饭店的菜很好吃。|The food at this restaurant is great.|อาหารร้านนี้อร่อยมาก|我们在饭店吃晚饭。|We're having dinner at a restaurant.|เรากินข้าวเย็นที่ร้านอาหาร
+52|room|ห้อง|home|我的房间很小。|My room is small.|ห้องของฉันเล็กมาก|他在房间里睡觉。|He's sleeping in his room.|เขากำลังนอนอยู่ในห้อง
+53|very, extremely|มาก, อย่างยิ่ง|describe|今天非常冷。|It's extremely cold today.|วันนี้หนาวมากๆ|我非常喜欢这个电影。|I really love this movie.|ฉันชอบหนังเรื่องนี้มากๆ
+54|airplane|เครื่องบิน|travel|我坐飞机去中国。|I'm flying to China.|ฉันนั่งเครื่องบินไปจีน|飞机几点到？|What time does the plane arrive?|เครื่องบินถึงกี่โมง
+55|minute; cent|นาที; เฟิน|time|现在八点十分。|It's 8:10 now.|ตอนนี้แปดโมงสิบนาที|一块是十分。|One kuai is ten fen.|หนึ่งหยวนเท่ากับสิบเฟิน
+56|minute (duration)|นาที (ระยะเวลา)|time|我想休息十分钟。|I want to rest for ten minutes.|ฉันอยากพักสิบนาที|我十分钟到。|I'll be there in ten minutes.|อีกสิบนาทีฉันจะถึง
+57|happy, glad|ดีใจ, มีความสุข|describe|认识你很高兴。|Nice to meet you.|ยินดีที่ได้รู้จัก|今天我很高兴。|I'm very happy today.|วันนี้ฉันมีความสุขมาก
+58|(general measure word)|อัน, คน, ลูก (ลักษณนามทั่วไป)|function|我有一个弟弟。|I have one younger brother.|ฉันมีน้องชายหนึ่งคน|这个苹果很大。|This apple is big.|แอปเปิลลูกนี้ใหญ่มาก
+59|song|เพลง|things|这个歌很好听。|This song sounds great.|เพลงนี้เพราะมาก|你会唱这个歌吗？|Can you sing this song?|คุณร้องเพลงนี้เป็นไหม
+60|older brother|พี่ชาย|people|我哥哥是大学生。|My older brother is a university student.|พี่ชายฉันเป็นนักศึกษา|哥哥在看电视。|My older brother is watching TV.|พี่ชายกำลังดูทีวี
+61|to give; for|ให้|actions|妈妈给我一个苹果。|Mom gives me an apple.|แม่ให้แอปเปิลฉันหนึ่งลูก|我给你打电话。|I'll call you.|ฉันจะโทรหาคุณ
+62|company|บริษัท|work|我在一个大公司工作。|I work at a big company.|ฉันทำงานที่บริษัทใหญ่แห่งหนึ่ง|他的公司在哪儿？|Where is his company?|บริษัทของเขาอยู่ที่ไหน
+63|work; to work|งาน; ทำงาน|work|你在哪儿工作？|Where do you work?|คุณทำงานที่ไหน|我的工作很忙。|My job is very busy.|งานของฉันยุ่งมาก
+64|dog|สุนัข, หมา|things|我家有一只狗。|My family has a dog.|บ้านฉันมีหมาหนึ่งตัว|那只狗很大。|That dog is big.|หมาตัวนั้นตัวใหญ่มาก
+65|expensive|แพง|shopping|这个手机太贵了。|This phone is too expensive.|มือถือเครื่องนี้แพงเกินไป|北京的饭店很贵吗？|Are restaurants in Beijing expensive?|ร้านอาหารในปักกิ่งแพงไหม
+66|country|ประเทศ|places|你是哪国人？|What country are you from?|คุณเป็นคนประเทศอะไร|中国是一个大国。|China is a big country.|จีนเป็นประเทศใหญ่
+67|still; also|ยัง, ยังคง|function|他还在睡觉。|He's still sleeping.|เขายังนอนอยู่|我还想喝茶。|I'd also like some tea.|ฉันยังอยากดื่มชาอีก
+68|child|เด็ก, ลูก|people|他们有两个孩子。|They have two children.|พวกเขามีลูกสองคน|孩子们在外边玩。|The children are playing outside.|เด็กๆ กำลังเล่นอยู่ข้างนอก
+69|Chinese (language)|ภาษาจีน|school|我在学习汉语。|I'm studying Chinese.|ฉันกำลังเรียนภาษาจีน|你的汉语很好。|Your Chinese is very good.|ภาษาจีนของคุณดีมาก
+70|Chinese character|อักษรจีน|school|这个汉字怎么读？|How do you read this character?|ตัวอักษรจีนตัวนี้อ่านว่าอะไร|我会写一些汉字。|I can write some Chinese characters.|ฉันเขียนอักษรจีนได้บ้าง
+71|number; date|เบอร์, หมายเลข; วันที่|time|今天几号？|What's the date today?|วันนี้วันที่เท่าไร|今天是五月八号。|Today is May 8th.|วันนี้วันที่แปดพฤษภาคม
+72|good, well|ดี|describe|你好吗？|How are you?|คุณสบายดีไหม|这个电影很好。|This movie is good.|หนังเรื่องนี้ดีมาก
+73|delicious|อร่อย|food|妈妈做的菜很好吃。|Mom's cooking is delicious.|อาหารที่แม่ทำอร่อยมาก|这个饺子好吃吗？|Are these dumplings tasty?|เกี๊ยวนี้อร่อยไหม
+74|good-looking; good (to watch)|สวย, น่าดู|describe|她的衣服很好看。|Her clothes look nice.|เสื้อผ้าของเธอสวยมาก|这个电影好看吗？|Is this movie good?|หนังเรื่องนี้สนุกไหม
+75|nice to listen to|ไพเราะ, เพราะ|describe|这个歌非常好听。|This song sounds lovely.|เพลงนี้เพราะมาก|她说话很好听。|She has a lovely way of speaking.|เธอพูดจาน่าฟัง
+76|fun|สนุก|describe|北京很好玩儿。|Beijing is a lot of fun.|ปักกิ่งสนุกมาก|这个东西真好玩儿。|This thing is really fun.|ของชิ้นนี้สนุกจริงๆ
+77|and; with|และ, กับ|function|我和我妈妈去超市。|My mom and I are going to the supermarket.|ฉันกับแม่ไปซูเปอร์มาร์เก็ต|我喜欢猫和狗。|I like cats and dogs.|ฉันชอบแมวและหมา
+78|to drink|ดื่ม|food|你想喝什么？|What would you like to drink?|คุณอยากดื่มอะไร|我早上喝牛奶。|I drink milk in the morning.|ฉันดื่มนมตอนเช้า
+79|very|มาก|describe|我很忙。|I'm very busy.|ฉันยุ่งมาก|这个房间很大。|This room is big.|ห้องนี้ใหญ่มาก
+80|after; behind|หลัง, ข้างหลัง|places|医院在学校后边。|The hospital is behind the school.|โรงพยาบาลอยู่ด้านหลังโรงเรียน|下课后我去吃饭。|After class I'm going to eat.|เลิกเรียนแล้วฉันจะไปกินข้าว
+81|to return|กลับ|travel|我明天回家。|I'm going home tomorrow.|พรุ่งนี้ฉันจะกลับบ้าน|他回中国了。|He went back to China.|เขากลับจีนแล้ว
+82|can (know how to)|เป็น, ทำได้ (ทักษะ)|function|你会说汉语吗？|Can you speak Chinese?|คุณพูดภาษาจีนเป็นไหม|我会开车。|I can drive.|ฉันขับรถเป็น
+83|train|รถไฟ|travel|我们坐火车去北京。|We're taking the train to Beijing.|เรานั่งรถไฟไปปักกิ่ง|火车八点开。|The train leaves at eight.|รถไฟออกตอนแปดโมง
+84|how many; a few|กี่, ไม่กี่|question|你家有几口人？|How many people are in your family?|บ้านคุณมีกี่คน|我有几个中国朋友。|I have a few Chinese friends.|ฉันมีเพื่อนคนจีนอยู่ไม่กี่คน
+85|home, family|บ้าน, ครอบครัว|home|我家在北京。|My home is in Beijing.|บ้านฉันอยู่ที่ปักกิ่ง|这家饭店很好。|This restaurant is good.|ร้านอาหารร้านนี้ดีมาก
+86|to see, to meet|เห็น, พบ|actions|明天见！|See you tomorrow!|พรุ่งนี้เจอกัน|我想见我的老师。|I want to see my teacher.|ฉันอยากพบครูของฉัน
+87|(measure word for clothes, matters)|ตัว, เรื่อง (ลักษณนาม)|function|我买了一件衣服。|I bought a piece of clothing.|ฉันซื้อเสื้อผ้ามาหนึ่งตัว|这件事我知道。|I know about this matter.|เรื่องนี้ฉันรู้
+88|to be called; to call|ชื่อ; เรียก|actions|你叫什么名字？|What's your name?|คุณชื่ออะไร|妈妈叫我回家。|Mom is calling me home.|แม่เรียกให้ฉันกลับบ้าน
+89|dumplings|เกี๊ยว, เจี่ยวจึ|food|我很喜欢吃饺子。|I love eating dumplings.|ฉันชอบกินเกี๊ยวมาก|妈妈在做饺子。|Mom is making dumplings.|แม่กำลังทำเกี๊ยว
+90|family member|คนในครอบครัว|people|我很想我的家人。|I really miss my family.|ฉันคิดถึงครอบครัวมาก|他的家人都在北京。|His family are all in Beijing.|ครอบครัวของเขาอยู่ปักกิ่งทั้งหมด
+91|egg|ไข่ไก่|food|我早饭吃鸡蛋。|I eat eggs for breakfast.|ฉันกินไข่เป็นอาหารเช้า|超市里鸡蛋很便宜。|Eggs are cheap at the supermarket.|ไข่ในซูเปอร์มาร์เก็ตถูกมาก
+92|older sister|พี่สาว|people|我姐姐是老师。|My older sister is a teacher.|พี่สาวฉันเป็นครู|姐姐很漂亮。|My older sister is very pretty.|พี่สาวสวยมาก
+93|this year|ปีนี้|time|我今年二十岁。|I'm twenty this year.|ปีนี้ฉันอายุยี่สิบปี|今年我很忙。|I'm very busy this year.|ปีนี้ฉันยุ่งมาก
+94|today|วันนี้|time|今天星期几？|What day is it today?|วันนี้วันอะไร|今天天气很好。|The weather is nice today.|วันนี้อากาศดีมาก
+95|nine|เก้า|numbers|我九点上课。|I have class at nine.|ฉันเข้าเรียนตอนเก้าโมง|我弟弟九岁。|My younger brother is nine.|น้องชายฉันอายุเก้าขวบ
+96|to feel, to think|รู้สึก, คิดว่า|actions|我觉得这个很好吃。|I think this is delicious.|ฉันคิดว่าอันนี้อร่อยมาก|你觉得怎么样？|What do you think?|คุณคิดว่ายังไง
+97|to open; to drive|เปิด; ขับ|actions|请开电视。|Please turn on the TV.|ช่วยเปิดทีวีหน่อย|商店九点开。|The shop opens at nine.|ร้านเปิดตอนเก้าโมง
+98|to drive|ขับรถ|travel|爸爸开车去上班。|Dad drives to work.|พ่อขับรถไปทำงาน|你会开车吗？|Can you drive?|คุณขับรถเป็นไหม
+99|to look, to watch|ดู, มอง|actions|我在看书。|I'm reading a book.|ฉันกำลังอ่านหนังสือ|你看，那是我的学校。|Look, that's my school.|ดูสิ นั่นคือโรงเรียนของฉัน
+100|to see a doctor|ไปหาหมอ|health|我病了，要去看病。|I'm sick and need to see a doctor.|ฉันป่วย ต้องไปหาหมอ|她去医院看病了。|She went to the hospital to see a doctor.|เธอไปหาหมอที่โรงพยาบาล

@@ -1,0 +1,50 @@
+151|milk|นม|food|我早上喝牛奶。|I drink milk in the morning.|ฉันดื่มนมตอนเช้า|这个牛奶多少钱？|How much is this milk?|นมนี้ราคาเท่าไร
+152|female|หญิง, ผู้หญิง|people|那个女老师很漂亮。|That female teacher is very pretty.|ครูผู้หญิงคนนั้นสวยมาก|我们学校有很多女学生。|Our school has lots of female students.|โรงเรียนเรามีนักเรียนหญิงเยอะมาก
+153|daughter|ลูกสาว|people|他有一个女儿。|He has a daughter.|เขามีลูกสาวหนึ่งคน|我女儿今年六岁。|My daughter is six this year.|ปีนี้ลูกสาวฉันอายุหกขวบ
+154|girlfriend|แฟน (ผู้หญิง)|people|他的女朋友是中国人。|His girlfriend is Chinese.|แฟนของเขาเป็นคนจีน|你有女朋友吗？|Do you have a girlfriend?|คุณมีแฟนไหม
+155|lady, Ms.|คุณผู้หญิง, นางสาว|people|女士，您好！|Hello, madam!|สวัสดีครับคุณผู้หญิง|那个女士是我的老师。|That lady is my teacher.|คุณผู้หญิงคนนั้นเป็นครูของฉัน
+156|friend|เพื่อน|people|他是我的好朋友。|He's my good friend.|เขาเป็นเพื่อนสนิทของฉัน|我在中国有很多朋友。|I have lots of friends in China.|ฉันมีเพื่อนเยอะที่จีน
+157|cheap|ถูก (ราคา)|shopping|这个很便宜。|This is very cheap.|อันนี้ถูกมาก|超市的水果很便宜。|The fruit at the supermarket is cheap.|ผลไม้ในซูเปอร์มาร์เก็ตถูกมาก
+158|beautiful, pretty|สวย|describe|你的衣服很漂亮。|Your clothes are beautiful.|เสื้อผ้าของคุณสวยมาก|她的妹妹非常漂亮。|Her younger sister is very pretty.|น้องสาวของเธอสวยมาก
+159|apple|แอปเปิล|food|我想吃一个苹果。|I want to eat an apple.|ฉันอยากกินแอปเปิลหนึ่งลูก|苹果多少钱？|How much are the apples?|แอปเปิลราคาเท่าไร
+160|seven|เจ็ด|numbers|我七点吃早饭。|I eat breakfast at seven.|ฉันกินอาหารเช้าตอนเจ็ดโมง|一个星期有七天。|A week has seven days.|หนึ่งสัปดาห์มีเจ็ดวัน
+161|front; before|ข้างหน้า; ก่อน|places|学校前边有一个商店。|There's a shop in front of the school.|หน้าโรงเรียนมีร้านค้าอยู่ร้านหนึ่ง|吃饭前我喝一杯水。|I drink a glass of water before meals.|ก่อนกินข้าวฉันดื่มน้ำหนึ่งแก้ว
+162|money|เงิน|shopping|我没有钱了。|I'm out of money.|ฉันไม่มีเงินแล้ว|这个多少钱？|How much is this?|อันนี้เท่าไร
+163|thousand|พัน|numbers|这个手机三千块。|This phone is three thousand yuan.|มือถือเครื่องนี้สามพันหยวน|学校里有一千个学生。|There are a thousand students at the school.|ในโรงเรียนมีนักเรียนหนึ่งพันคน
+164|to get up|ตื่นนอน, ลุกจากเตียง|actions|你几点起床？|What time do you get up?|คุณตื่นนอนกี่โมง|我今天起床很晚。|I got up late today.|วันนี้ฉันตื่นสาย
+165|please; to invite|กรุณา, เชิญ|phrases|请坐！|Please sit down!|เชิญนั่ง|请喝茶。|Please have some tea.|เชิญดื่มชา
+166|excuse me, may I ask|ขอถามหน่อย|phrases|请问，超市在哪儿？|Excuse me, where is the supermarket?|ขอถามหน่อย ซูเปอร์มาร์เก็ตอยู่ที่ไหน|请问，现在几点？|Excuse me, what time is it?|ขอโทษนะ ตอนนี้กี่โมง
+167|to go|ไป|travel|我去学校。|I'm going to school.|ฉันไปโรงเรียน|你想去哪儿？|Where do you want to go?|คุณอยากไปไหน
+168|last year|ปีที่แล้ว|time|我去年去了北京。|I went to Beijing last year.|ปีที่แล้วฉันไปปักกิ่งมา|去年我很忙。|I was very busy last year.|ปีที่แล้วฉันยุ่งมาก
+169|hot|ร้อน|weather|今天太热了！|It's too hot today!|วันนี้ร้อนเกินไป|我想喝一杯热茶。|I'd like a cup of hot tea.|ฉันอยากดื่มชาร้อนสักแก้ว
+170|person, people|คน|people|这个人是谁？|Who is this person?|คนนี้คือใคร|超市里人很多。|There are lots of people in the supermarket.|ในซูเปอร์มาร์เก็ตคนเยอะมาก
+171|to know (a person), to recognize|รู้จัก|people|认识你很高兴。|Nice to meet you.|ยินดีที่ได้รู้จัก|你认识他吗？|Do you know him?|คุณรู้จักเขาไหม
+172|day; date|วัน, วันที่|time|今天是三月十日。|Today is March 10th.|วันนี้วันที่สิบมีนาคม|六月一日是星期几？|What day of the week is June 1st?|วันที่หนึ่งมิถุนายนเป็นวันอะไร
+173|three|สาม|numbers|我有三个朋友。|I have three friends.|ฉันมีเพื่อนสามคน|现在三点。|It's three o'clock now.|ตอนนี้สามโมง
+174|up, on; to go up; last/previous|บน; ขึ้น|places|书在桌子上。|The book is on the table.|หนังสืออยู่บนโต๊ะ|我上个星期去了上海。|I went to Shanghai last week.|สัปดาห์ที่แล้วฉันไปเซี่ยงไฮ้มา
+175|to go to work|ไปทำงาน|work|我八点上班。|I start work at eight.|ฉันเข้างานตอนแปดโมง|他坐火车上班。|He takes the train to work.|เขานั่งรถไฟไปทำงาน
+176|shop, store|ร้านค้า|places|这个商店卖衣服。|This shop sells clothes.|ร้านนี้ขายเสื้อผ้า|商店几点开？|What time does the shop open?|ร้านเปิดกี่โมง
+177|to go to class|เข้าเรียน|school|我们几点上课？|What time does our class start?|เราเข้าเรียนกี่โมง|她在上课。|She's in class.|เธอกำลังเรียนอยู่
+178|morning (before noon)|ตอนเช้า, ช่วงสาย|time|我上午在家。|I'm at home in the morning.|ตอนเช้าฉันอยู่บ้าน|明天上午你忙吗？|Are you busy tomorrow morning?|พรุ่งนี้เช้าคุณยุ่งไหม
+179|to go to school|ไปโรงเรียน|school|我弟弟上学了。|My younger brother has started school.|น้องชายฉันเข้าโรงเรียนแล้ว|你几点上学？|What time do you go to school?|คุณไปโรงเรียนกี่โมง
+180|few, little|น้อย|describe|今天超市里人很少。|There are few people in the supermarket today.|วันนี้ในซูเปอร์มาร์เก็ตคนน้อยมาก|今天来的人很少。|Few people came today.|วันนี้คนมาน้อยมาก
+181|who|ใคร|question|他是谁？|Who is he?|เขาคือใคร|谁是你的老师？|Who is your teacher?|ใครเป็นครูของคุณ
+182|to get sick|ป่วย, เจ็บป่วย|health|我生病了。|I've gotten sick.|ฉันป่วยแล้ว|天气冷，不要生病。|It's cold, don't get sick.|อากาศหนาว อย่าป่วยนะ
+183|what|อะไร|question|你叫什么名字？|What's your name?|คุณชื่ออะไร|你想吃什么？|What do you want to eat?|คุณอยากกินอะไร
+184|ten|สิบ|numbers|我十点睡觉。|I go to bed at ten.|ฉันนอนตอนสิบโมง (สี่ทุ่ม)|这个十块钱。|This is ten yuan.|อันนี้สิบหยวน
+185|matter, thing|เรื่อง, ธุระ|things|你有什么事？|What's the matter? / What do you need?|คุณมีธุระอะไร|我今天有事，不能去。|I have something on today and can't go.|วันนี้ฉันมีธุระ ไปไม่ได้
+186|to be|เป็น, คือ|function|我是学生。|I'm a student.|ฉันเป็นนักเรียน|这是我的书。|This is my book.|นี่คือหนังสือของฉัน
+187|time, moment|ตอน, เวลา|time|你什么时候来？|When are you coming?|คุณจะมาเมื่อไร|我在家的时候看电视。|I watch TV when I'm at home.|ตอนอยู่บ้านฉันดูทีวี
+188|time (period)|เวลา|time|你有时间吗？|Do you have time?|คุณมีเวลาไหม|我没有时间吃饭。|I don't have time to eat.|ฉันไม่มีเวลากินข้าว
+189|mobile phone|โทรศัพท์มือถือ|things|这是我的新手机。|This is my new phone.|นี่คือมือถือเครื่องใหม่ของฉัน|你的手机在哪儿？|Where's your phone?|มือถือของคุณอยู่ไหน
+190|book|หนังสือ|things|我在看书。|I'm reading a book.|ฉันกำลังอ่านหนังสือ|这本书是谁的？|Whose book is this?|หนังสือเล่มนี้เป็นของใคร
+191|bookstore|ร้านหนังสือ|places|我去书店买书。|I'm going to the bookstore to buy books.|ฉันไปร้านหนังสือเพื่อซื้อหนังสือ|书店在学校前边。|The bookstore is in front of the school.|ร้านหนังสืออยู่หน้าโรงเรียน
+192|to sleep|นอน|actions|我很想睡。|I really want to sleep.|ฉันง่วงมาก อยากนอน|孩子睡了。|The child is asleep.|เด็กหลับแล้ว
+193|water|น้ำ|food|我想喝水。|I want to drink water.|ฉันอยากดื่มน้ำ|请给我一杯水。|Please give me a glass of water.|ขอน้ำหนึ่งแก้ว
+194|fruit|ผลไม้|food|我喜欢吃水果。|I like eating fruit.|ฉันชอบกินผลไม้|超市里有很多水果。|There's lots of fruit in the supermarket.|ในซูเปอร์มาร์เก็ตมีผลไม้เยอะ
+195|to sleep, go to bed|นอนหลับ, เข้านอน|actions|你几点睡觉？|What time do you go to bed?|คุณเข้านอนกี่โมง|弟弟在房间里睡觉。|My younger brother is sleeping in his room.|น้องชายกำลังนอนอยู่ในห้อง
+196|to say, to speak|พูด|actions|你会说汉语吗？|Can you speak Chinese?|คุณพูดภาษาจีนเป็นไหม|他说他明天来。|He says he's coming tomorrow.|เขาบอกว่าพรุ่งนี้จะมา
+197|to talk|พูดคุย|actions|上课的时候不要说话。|Don't talk during class.|ตอนเรียนอย่าคุยกัน|我们在说话。|We're talking.|เรากำลังคุยกันอยู่
+198|four|สี่|numbers|我家有四口人。|There are four people in my family.|บ้านฉันมีสี่คน|我四点下课。|I finish class at four.|ฉันเลิกเรียนตอนสี่โมง
+199|years old|ขวบ, ปี (อายุ)|numbers|你几岁了？|How old are you? (to a child)|หนูอายุกี่ขวบ|我今年二十岁。|I'm twenty this year.|ปีนี้ฉันอายุยี่สิบปี
+200|he, him|เขา (ผู้ชาย)|people|他是我哥哥。|He's my older brother.|เขาเป็นพี่ชายของฉัน|我认识他。|I know him.|ฉันรู้จักเขา

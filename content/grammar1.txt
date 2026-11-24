@@ -1,0 +1,140 @@
+#g1-01|Use 是 to say A is B when both sides are nouns. Don't use 是 before adjectives.|ใช้ 是 เชื่อมคำนามกับคำนาม (A คือ B) ห้ามใช้ 是 หน้าคำคุณศัพท์
+ex|g1-01|我是学生。|I'm a student.|ฉันเป็นนักเรียน|是|在,有
+ex|g1-01|他是我哥哥。|He's my older brother.|เขาเป็นพี่ชายของฉัน|是|有,很
+ex|g1-01|这是我的手机。|This is my phone.|นี่คือมือถือของฉัน|是|在,的
+ex|g1-01|她不是老师。|She isn't a teacher.|เธอไม่ใช่ครู|是|有,在
+#g1-02|有 means "to have" or "there is". Its negative is always 没有, never 不有.|有 แปลว่า "มี" รูปปฏิเสธคือ 没有 เสมอ ไม่ใช้ 不有
+ex|g1-02|我有一个妹妹。|I have a younger sister.|ฉันมีน้องสาวหนึ่งคน|有|是,在
+ex|g1-02|桌子上有一本书。|There's a book on the table.|บนโต๊ะมีหนังสือหนึ่งเล่ม|有|是,在
+ex|g1-02|我没有钱。|I don't have money.|ฉันไม่มีเงิน|没有|不有,不是
+ex|g1-02|学校里有超市吗？|Is there a supermarket in the school?|ในโรงเรียนมีซูเปอร์มาร์เก็ตไหม|有|是,在
+#g1-03|Adjectives act as the verb. Put 很 before them in plain statements; it often doesn't mean "very".|คำคุณศัพท์ทำหน้าที่เป็นกริยาได้เลย ประโยคบอกเล่าทั่วไปมักใส่ 很 ข้างหน้า (ไม่จำเป็นต้องแปลว่า "มาก")
+ex|g1-03|我很忙。|I'm busy.|ฉันยุ่ง|很|是,有
+ex|g1-03|今天很冷。|It's cold today.|วันนี้หนาว|很|是,在
+ex|g1-03|这个苹果很大。|This apple is big.|แอปเปิลลูกนี้ใหญ่|很|是,有
+ex|g1-03|他的房间不大。|His room isn't big.|ห้องของเขาไม่ใหญ่|不|没,是
+#g1-04|Dates, ages and prices can be the whole predicate without 是.|วันที่ อายุ และราคา เป็นภาคแสดงได้เลยโดยไม่ต้องใช้ 是
+ex|g1-04|今天星期一。|Today is Monday.|วันนี้วันจันทร์|星期一|是星期,有星期
+ex|g1-04|我弟弟八岁。|My younger brother is eight.|น้องชายฉันอายุแปดขวบ|八岁|是八,有八
+ex|g1-04|这个苹果五块钱。|This apple is five yuan.|แอปเปิลลูกนี้ห้าหยวน|五块钱|是五块,有五块
+ex|g1-04|现在三点。|It's three o'clock.|ตอนนี้สามโมง|三点|是三,有三
+#g1-05|Chinese order is Subject + Time + Place + Verb. Time and place come before the action, not after.|ลำดับคำคือ ประธาน + เวลา + สถานที่ + กริยา เวลาและสถานที่อยู่หน้ากริยาเสมอ
+ex|g1-05|我明天在家休息。|I'm resting at home tomorrow.|พรุ่งนี้ฉันพักผ่อนที่บ้าน|在家|家在,在
+ex|g1-05|他中午在公司吃饭。|He eats at the company at noon.|ตอนเที่ยงเขากินข้าวที่บริษัท|在公司|公司在,到
+ex|g1-05|我们晚上在饭店吃饭。|We're eating at a restaurant tonight.|คืนนี้เรากินข้าวที่ร้านอาหาร|在饭店|饭店在,去
+ex|g1-05|她上午在学校上课。|She has class at school in the morning.|ตอนเช้าเธอเรียนที่โรงเรียน|在学校|学校在,到
+#g1-06|Add 吗 to the end of a statement to make a yes/no question.|เติม 吗 ท้ายประโยคบอกเล่า เพื่อทำเป็นคำถามแบบใช่/ไม่ใช่
+ex|g1-06|你是老师吗？|Are you a teacher?|คุณเป็นครูไหม|吗|呢,吧
+ex|g1-06|你喜欢喝茶吗？|Do you like tea?|คุณชอบดื่มชาไหม|吗|呢,了
+ex|g1-06|他在家吗？|Is he at home?|เขาอยู่บ้านไหม|吗|呢,的
+ex|g1-06|你吃饭了吗？|Have you eaten?|คุณกินข้าวหรือยัง|吗|呢,吧
+#g1-07|Question words go where the answer would go. Don't move them to the front, and don't add 吗.|คำแสดงคำถามวางตรงตำแหน่งของคำตอบ ไม่ต้องย้ายไปหน้าประโยค และไม่ต้องเติม 吗
+ex|g1-07|你叫什么名字？|What's your name?|คุณชื่ออะไร|什么|谁,哪儿
+ex|g1-07|他是谁？|Who is he?|เขาคือใคร|谁|什么,哪
+ex|g1-07|你去哪儿？|Where are you going?|คุณจะไปไหน|哪儿|什么,谁
+ex|g1-07|你家有几口人？|How many people are in your family?|บ้านคุณมีกี่คน|几|什么,哪
+#g1-08|Ask a question by saying the verb + 不 + verb. No 吗 is needed.|ถามด้วยรูป กริยา + 不 + กริยา โดยไม่ต้องใช้ 吗
+ex|g1-08|你是不是学生？|Are you a student or not?|คุณเป็นนักเรียนหรือเปล่า|是不是|是吗是,不是是
+ex|g1-08|你去不去？|Are you going or not?|คุณจะไปหรือไม่ไป|去不去|去没去,不去去
+ex|g1-08|这个贵不贵？|Is this expensive?|อันนี้แพงไหม|贵不贵|贵没贵,很贵
+ex|g1-08|你喜欢不喜欢？|Do you like it or not?|คุณชอบหรือไม่ชอบ|喜欢不喜欢|喜欢没喜欢,不喜欢
+#g1-09|Noun + 呢 asks "what about…?" or "where is…?".|คำนาม + 呢 ใช้ถามว่า "แล้ว...ล่ะ" หรือ "...อยู่ไหน"
+ex|g1-09|我很好，你呢？|I'm fine, and you?|ฉันสบายดี แล้วคุณล่ะ|呢|吗,吧
+ex|g1-09|我的手机呢？|Where's my phone?|มือถือฉันล่ะ|呢|吗,了
+ex|g1-09|我是老师，他呢？|I'm a teacher. What about him?|ฉันเป็นครู แล้วเขาล่ะ|呢|吗,的
+ex|g1-09|妈妈呢？|Where's Mom?|แม่ล่ะ|呢|吗,吧
+#g1-10|不 negates habits, wishes and the future. 没 negates the past: "didn't" or "haven't".|不 ปฏิเสธนิสัย ความต้องการ และอนาคต ส่วน 没 ปฏิเสธสิ่งที่ไม่ได้เกิดขึ้นในอดีต
+ex|g1-10|我不喝茶。|I don't drink tea.|ฉันไม่ดื่มชา|不|没,别
+ex|g1-10|我昨天没去学校。|I didn't go to school yesterday.|เมื่อวานฉันไม่ได้ไปโรงเรียน|没|不,别
+ex|g1-10|明天我不上班。|I'm not working tomorrow.|พรุ่งนี้ฉันไม่ทำงาน|不|没,别
+ex|g1-10|他还没吃饭。|He hasn't eaten yet.|เขายังไม่ได้กินข้าว|没|不,别
+#g1-11|不要 + verb means "don't (do it)".|不要 + กริยา แปลว่า "อย่า..."
+ex|g1-11|不要说话。|Don't talk.|อย่าพูด|不要|没要,不是
+ex|g1-11|上课的时候不要睡觉。|Don't sleep in class.|ตอนเรียนอย่านอน|不要|没有,不是
+ex|g1-11|天气冷，不要生病。|It's cold, don't get sick.|อากาศหนาว อย่าป่วยนะ|不要|没有,不是
+ex|g1-11|不要买这个，太贵了。|Don't buy this, it's too expensive.|อย่าซื้ออันนี้ แพงเกินไป|不要|没有,不是
+#g1-12|会 = learned skill. 能 = able, possible. 可以 = allowed, okay.|会 = ทำเป็น (ทักษะที่ฝึกมา) 能 = สามารถ เป็นไปได้ 可以 = ได้รับอนุญาต
+ex|g1-12|我会说汉语。|I can speak Chinese.|ฉันพูดภาษาจีนเป็น|会|可以,能
+ex|g1-12|我今天不能去。|I can't go today.|วันนี้ฉันไปไม่ได้|能|会,可以
+ex|g1-12|我可以坐这儿吗？|May I sit here?|ฉันนั่งตรงนี้ได้ไหม|可以|会,能
+ex|g1-12|你会开车吗？|Can you drive?|คุณขับรถเป็นไหม|会|可以,能
+#g1-13|想 = would like to (softer). 要 = want to or going to (firmer).|想 = อยาก (นุ่มนวลกว่า) 要 = ต้องการ จะ (หนักแน่นกว่า)
+ex|g1-13|我想喝茶。|I'd like some tea.|ฉันอยากดื่มชา|想|会,能
+ex|g1-13|我要一杯水。|I want a glass of water.|ฉันเอาน้ำหนึ่งแก้ว|要|会,能
+ex|g1-13|明天我要上班。|I have to work tomorrow.|พรุ่งนี้ฉันต้องไปทำงาน|要|会,可以
+ex|g1-13|你想去哪儿？|Where would you like to go?|คุณอยากไปไหน|想|会,能
+#g1-14|的 links a describer to a noun: the describer comes first.|的 เชื่อมคำขยายกับคำนาม โดยคำขยายอยู่หน้าเสมอ (กลับกับภาษาไทย)
+ex|g1-14|这是我的书。|This is my book.|นี่คือหนังสือของฉัน|的|是,了
+ex|g1-14|妈妈做的菜很好吃。|The food Mom makes is delicious.|อาหารที่แม่ทำอร่อยมาก|的|了,是
+ex|g1-14|他是我的好朋友。|He's my good friend.|เขาเป็นเพื่อนสนิทของฉัน|的|了,是
+ex|g1-14|这是谁的手机？|Whose phone is this?|นี่มือถือของใคร|的|了,吗
+#g1-15|A number or 这/那 needs a measure word before the noun. 个 is the general one.|ตัวเลขหรือ 这/那 ต้องมีลักษณนามก่อนคำนาม 个 ใช้ได้ทั่วไป
+ex|g1-15|我有三个朋友。|I have three friends.|ฉันมีเพื่อนสามคน|个|本,只
+ex|g1-15|我买了两本书。|I bought two books.|ฉันซื้อหนังสือสองเล่ม|本|个,只
+ex|g1-15|我家有一只猫。|My family has a cat.|บ้านฉันมีแมวหนึ่งตัว|只|本,件
+ex|g1-15|这件衣服很漂亮。|This piece of clothing is pretty.|เสื้อตัวนี้สวยมาก|件|本,只
+#g1-16|Use 两 before a measure word, e.g. 两个. Use 二 when counting, in numbers like 十二, and in dates.|ใช้ 两 หน้าลักษณนาม (两个) ใช้ 二 ในการนับเลข ตัวเลขอย่าง 十二 และวันที่
+ex|g1-16|我有两个哥哥。|I have two older brothers.|ฉันมีพี่ชายสองคน|两|二,第
+ex|g1-16|今天是二月二日。|Today is February 2nd.|วันนี้วันที่สองกุมภาพันธ์|二|两,第
+ex|g1-16|我要两杯茶。|I'd like two cups of tea.|ขอชาสองแก้ว|两|二,第
+ex|g1-16|我十二岁。|I'm twelve.|ฉันอายุสิบสองปี|二|两,第
+#g1-17|太…了 = too or so (strong). 真 = really. 非常 = extremely. 有点儿 = a bit, usually negative.|太…了 = เกินไป/มากๆ 真 = จริงๆ 非常 = อย่างยิ่ง 有点儿 = นิดหน่อย (มักแง่ลบ)
+ex|g1-17|这个太贵了！|This is too expensive!|อันนี้แพงเกินไป|太|很,有
+ex|g1-17|今天有点儿冷。|It's a bit cold today.|วันนี้หนาวนิดหน่อย|有点儿|一点儿,太
+ex|g1-17|你的汉语真好！|Your Chinese is really good!|ภาษาจีนของคุณดีจริงๆ|真|太,有点儿
+ex|g1-17|我非常喜欢这个电影。|I really love this movie.|ฉันชอบหนังเรื่องนี้มาก|非常|太,有点儿
+#g1-18|也 (also) and 都 (all) go after the subject and before the verb. When used together: 也都.|也 (ก็) และ 都 (ทั้งหมด) วางหลังประธาน หน้ากริยา ถ้าใช้คู่กันเรียงเป็น 也都
+ex|g1-18|我也是学生。|I'm also a student.|ฉันก็เป็นนักเรียน|也|都,还
+ex|g1-18|我们都喜欢喝茶。|We all like tea.|พวกเราชอบดื่มชากันทุกคน|都|也,还
+ex|g1-18|他们也都来了。|They all came too.|พวกเขาก็มากันหมด|也都|都也,还都
+ex|g1-18|他也喜欢猫。|He likes cats too.|เขาก็ชอบแมว|也|都,还
+#g1-19|在 or 正在 before a verb means the action is happening now. 呢 can end the sentence.|在/正在 หน้ากริยา = กำลังทำอยู่ ท้ายประโยคใส่ 呢 ได้
+ex|g1-19|我在吃饭。|I'm eating.|ฉันกำลังกินข้าว|在|了,是
+ex|g1-19|他正在睡觉呢。|He's sleeping right now.|เขากำลังนอนอยู่|正在|了,是
+ex|g1-19|妈妈在做饭。|Mom is cooking.|แม่กำลังทำอาหาร|在|了,是
+ex|g1-19|你在做什么？|What are you doing?|คุณกำลังทำอะไร|在|了,是
+#g1-20|了 right after a verb means the action was completed.|了 หลังกริยา บอกว่าการกระทำเสร็จสิ้นแล้ว
+ex|g1-20|我买了两本书。|I bought two books.|ฉันซื้อหนังสือมาสองเล่ม|了|过,的
+ex|g1-20|他吃了一个苹果。|He ate an apple.|เขากินแอปเปิลไปหนึ่งลูก|了|呢,的
+ex|g1-20|我喝了一杯茶。|I drank a cup of tea.|ฉันดื่มชาไปหนึ่งแก้ว|了|呢,的
+ex|g1-20|昨天我看了一个电影。|Yesterday I watched a movie.|เมื่อวานฉันดูหนังมาหนึ่งเรื่อง|了|呢,的
+#g1-21|了 at the end of a sentence marks a new situation: "now…" or "already…".|了 ท้ายประโยค บอกว่าสถานการณ์เปลี่ยนไปแล้ว ("...แล้ว")
+ex|g1-21|下雨了。|It's started raining.|ฝนตกแล้ว|了|吗,呢
+ex|g1-21|我二十岁了。|I'm twenty now.|ฉันอายุยี่สิบแล้ว|了|吗,呢
+ex|g1-21|太晚了，我们回家吧。|It's late now, let's go home.|ดึกแล้ว กลับบ้านกันเถอะ|了|吗,呢
+ex|g1-21|我不忙了。|I'm not busy anymore.|ฉันไม่ยุ่งแล้ว|了|吗,呢
+#g1-22|吧 at the end makes a suggestion ("let's…") or checks something you assume.|吧 ท้ายประโยคใช้ชวน ("...กันเถอะ") หรือถามเพื่อยืนยันสิ่งที่คาดไว้
+ex|g1-22|我们去吃饭吧。|Let's go eat.|เราไปกินข้าวกันเถอะ|吧|吗,呢
+ex|g1-22|你是老师吧？|You're a teacher, right?|คุณเป็นครูใช่ไหม|吧|呢,了
+ex|g1-22|我们坐出租车去吧。|Let's take a taxi.|เรานั่งแท็กซี่ไปกันเถอะ|吧|吗,呢
+ex|g1-22|你休息一下吧。|Take a rest.|พักสักหน่อยเถอะ|吧|吗,呢
+#g1-23|在 + place goes before the verb to say where something happens.|在 + สถานที่ วางหน้ากริยา เพื่อบอกว่าเกิดขึ้นที่ไหน
+ex|g1-23|我在学校学习汉语。|I study Chinese at school.|ฉันเรียนภาษาจีนที่โรงเรียน|在|到,有
+ex|g1-23|他在医院工作。|He works at a hospital.|เขาทำงานที่โรงพยาบาล|在|到,有
+ex|g1-23|我们在家吃晚饭。|We have dinner at home.|เรากินข้าวเย็นที่บ้าน|在|到,有
+ex|g1-23|你在哪儿工作？|Where do you work?|คุณทำงานที่ไหน|在|到,有
+#g1-24|和 links nouns ("and" or "with"). It doesn't link verbs or sentences.|和 เชื่อมคำนาม ("และ", "กับ") ไม่ใช้เชื่อมกริยาหรือประโยค
+ex|g1-24|我和妈妈去超市。|Mom and I are going to the supermarket.|ฉันกับแม่ไปซูเปอร์มาร์เก็ต|和|也,都
+ex|g1-24|我喜欢猫和狗。|I like cats and dogs.|ฉันชอบแมวและหมา|和|也,都
+ex|g1-24|爸爸和妈妈都是医生。|Dad and Mom are both doctors.|พ่อและแม่เป็นหมอทั้งคู่|和|也,还
+ex|g1-24|我有一个哥哥和一个妹妹。|I have an older brother and a younger sister.|ฉันมีพี่ชายหนึ่งคนและน้องสาวหนึ่งคน|和|也,都
+#g1-25|Separable verbs like 睡觉 and 上课 are verb + object. Other words can go in between, e.g. 睡了觉.|กริยาแยกได้ เช่น 睡觉 上课 คือกริยา+กรรม สามารถแทรกคำตรงกลางได้ (睡了觉)
+ex|g1-25|你几点睡觉？|What time do you go to bed?|คุณเข้านอนกี่โมง|睡觉|觉睡,睡
+ex|g1-25|我们九点上课。|We start class at nine.|เราเข้าเรียนตอนเก้าโมง|上课|课上,上
+ex|g1-25|他下班了。|He's gotten off work.|เขาเลิกงานแล้ว|下班|班下,下
+ex|g1-25|我病了，要去看病。|I'm sick and need to see a doctor.|ฉันป่วย ต้องไปหาหมอ|看病|病看,看
+#g1-26|去/来 + place + verb means going or coming somewhere to do something.|去/来 + สถานที่ + กริยา = ไป/มาที่ใดที่หนึ่งเพื่อทำบางอย่าง
+ex|g1-26|我去超市买水果。|I'm going to the supermarket to buy fruit.|ฉันไปซูเปอร์มาร์เก็ตซื้อผลไม้|去|在,到
+ex|g1-26|他来中国学习汉语。|He came to China to study Chinese.|เขามาเรียนภาษาจีนที่จีน|来|在,到
+ex|g1-26|我们去饭店吃饭吧。|Let's go to a restaurant to eat.|เราไปกินข้าวที่ร้านอาหารกันเถอะ|去|在,有
+ex|g1-26|我去书店买书。|I'm going to the bookstore to buy books.|ฉันไปซื้อหนังสือที่ร้านหนังสือ|去|在,有
+#g1-27|Dates go big to small: year, month, day, weekday. Times go hour (点), then minute (分).|วันที่เรียงจากใหญ่ไปเล็ก: ปี เดือน วัน วันในสัปดาห์ เวลา: ชั่วโมง (点) แล้วนาที (分)
+ex|g1-27|今天是五月八号。|Today is May 8th.|วันนี้วันที่แปดพฤษภาคม|五月八号|八号五月,八五月号
+ex|g1-27|现在八点十分。|It's 8:10 now.|ตอนนี้แปดโมงสิบนาที|八点十分|十分八点,八分十点
+ex|g1-27|今天星期几？|What day of the week is it?|วันนี้วันอะไร|星期几|几星期,星期什么
+ex|g1-27|我七点半起床。|I get up at 7:30.|ฉันตื่นนอนตอนเจ็ดโมงครึ่ง|七点半|半七点,七半点
+#g1-28|第 + number makes an ordinal: 第一 means "first".|第 + ตัวเลข = ลำดับที่ เช่น 第一 = ที่หนึ่ง
+ex|g1-28|今天是第一天。|Today is the first day.|วันนี้เป็นวันแรก|第一|一第,第个
+ex|g1-28|他是第一个到学校的。|He was the first one to get to school.|เขาเป็นคนแรกที่มาถึงโรงเรียน|第一个|一个第,个第一
+ex|g1-28|这是第二本书。|This is the second book.|นี่คือหนังสือเล่มที่สอง|第二本|二第本,第本二
+ex|g1-28|我们学习第三课。|We're studying Lesson 3.|เรากำลังเรียนบทที่สาม|第三课|三第课,第课三

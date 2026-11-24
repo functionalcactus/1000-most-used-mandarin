@@ -1,0 +1,50 @@
+1|to love|รัก|people|我爱我的家人。|I love my family.|ฉันรักครอบครัวของฉัน|妈妈很爱小猫。|Mom really loves the kitten.|แม่รักลูกแมวมาก
+2|(suggestion particle)|นะ, เถอะ (คำลงท้ายชวน)|function|我们去吃饭吧。|Let's go eat.|เราไปกินข้าวกันเถอะ|你是老师吧？|You're a teacher, right?|คุณเป็นครูใช่ไหม
+3|eight|แปด|numbers|我八点起床。|I get up at eight.|ฉันตื่นนอนตอนแปดโมง|这个杯子八块钱。|This cup is eight yuan.|แก้วใบนี้แปดหยวน
+4|dad|พ่อ|people|我爸爸是医生。|My dad is a doctor.|พ่อของฉันเป็นหมอ|爸爸在开车。|Dad is driving.|พ่อกำลังขับรถ
+5|hundred|ร้อย|numbers|这本书一百块。|This book is one hundred yuan.|หนังสือเล่มนี้หนึ่งร้อยหยวน|学校里有三百个学生。|There are three hundred students in the school.|ในโรงเรียนมีนักเรียนสามร้อยคน
+6|daytime|ตอนกลางวัน|time|白天我在公司工作。|In the daytime I work at the company.|ตอนกลางวันฉันทำงานที่บริษัท|白天很热，晚上很冷。|It's hot in the day and cold at night.|กลางวันร้อน กลางคืนหนาว
+7|half|ครึ่ง|numbers|现在八点半。|It's half past eight now.|ตอนนี้แปดโมงครึ่ง|我吃了半个苹果。|I ate half an apple.|ฉันกินแอปเปิลไปครึ่งลูก
+8|steamed bun|ซาลาเปา|food|我早饭吃包子。|I eat steamed buns for breakfast.|ฉันกินซาลาเปาเป็นอาหารเช้า|这个包子很好吃。|This bun is delicious.|ซาลาเปาลูกนี้อร่อยมาก
+9|cup, glass|แก้ว|things|桌子上有一个杯子。|There's a cup on the table.|บนโต๊ะมีแก้วหนึ่งใบ|这个杯子是我的。|This cup is mine.|แก้วใบนี้เป็นของฉัน
+10|(measure word for books)|เล่ม (ลักษณนามหนังสือ)|function|我买了两本书。|I bought two books.|ฉันซื้อหนังสือสองเล่ม|这本书很好看。|This book is very good.|หนังสือเล่มนี้สนุกมาก
+11|side|ข้าง, ด้าน|places|学校在医院那边。|The school is over by the hospital.|โรงเรียนอยู่ทางฝั่งโรงพยาบาล|商店在这边。|The shop is on this side.|ร้านค้าอยู่ฝั่งนี้
+12|illness; to be ill|ป่วย, โรค|health|他病了，没去上班。|He's ill and didn't go to work.|เขาป่วย เลยไม่ได้ไปทำงาน|我的病好了。|I've recovered from my illness.|ฉันหายป่วยแล้ว
+13|not, no|ไม่|function|我不喝茶。|I don't drink tea.|ฉันไม่ดื่มชา|今天不冷。|It isn't cold today.|วันนี้ไม่หนาว
+14|you're welcome|ไม่เป็นไร (ตอบคำขอบคุณ)|phrases|谢谢你！不客气。|Thank you! You're welcome.|ขอบคุณนะ ไม่เป็นไรครับ|不客气，再见！|You're welcome, goodbye!|ไม่เป็นไร ลาก่อน
+15|don't; not want|อย่า, ไม่เอา|function|不要说话。|Don't talk.|อย่าพูด|我不要这个。|I don't want this one.|ฉันไม่เอาอันนี้
+16|dish; vegetable|อาหาร (กับข้าว), ผัก|food|这个饭店的菜很好吃。|The food at this restaurant is delicious.|อาหารร้านนี้อร่อยมาก|妈妈在做菜。|Mom is cooking.|แม่กำลังทำกับข้าว
+17|tea|ชา|food|你喝茶吗？|Do you drink tea?|คุณดื่มชาไหม|中国人很喜欢喝茶。|Chinese people really like drinking tea.|คนจีนชอบดื่มชามาก
+18|to sing|ร้อง (เพลง)|actions|她很喜欢唱歌。|She really likes singing.|เธอชอบร้องเพลงมาก|我们唱歌吧。|Let's sing.|เราร้องเพลงกันเถอะ
+19|supermarket|ซูเปอร์มาร์เก็ต|places|我去超市买水果。|I'm going to the supermarket to buy fruit.|ฉันไปซูเปอร์มาร์เก็ตซื้อผลไม้|超市在学校后边。|The supermarket is behind the school.|ซูเปอร์มาร์เก็ตอยู่ด้านหลังโรงเรียน
+20|vehicle, car|รถ|travel|这是我的车。|This is my car.|นี่คือรถของฉัน|外边车很多。|There are lots of cars outside.|ข้างนอกรถเยอะมาก
+21|to eat|กิน|food|你吃饭了吗？|Have you eaten?|คุณกินข้าวหรือยัง|我想吃饺子。|I want to eat dumplings.|ฉันอยากกินเกี๊ยว
+22|to wear, to put on|สวม, ใส่ (เสื้อผ้า)|actions|今天很冷，多穿衣服。|It's cold today, wear more clothes.|วันนี้หนาว ใส่เสื้อผ้าเยอะๆ นะ|她穿了新衣服。|She's wearing new clothes.|เธอใส่เสื้อผ้าใหม่
+23|taxi|แท็กซี่|travel|我们坐出租车去吧。|Let's take a taxi.|เรานั่งแท็กซี่ไปกันเถอะ|出租车来了。|The taxi is here.|แท็กซี่มาแล้ว
+24|big|ใหญ่|describe|这个房间很大。|This room is big.|ห้องนี้ใหญ่มาก|他家的狗很大。|His family's dog is big.|หมาบ้านเขาตัวใหญ่มาก
+25|to make a phone call|โทรศัพท์|actions|我晚上给你打电话。|I'll call you tonight.|ตอนเย็นฉันจะโทรหาคุณ|妈妈在打电话。|Mom is on the phone.|แม่กำลังคุยโทรศัพท์
+26|everyone|ทุกคน|people|大家好！|Hello, everyone!|สวัสดีทุกคน|大家都来了。|Everyone has come.|ทุกคนมากันหมดแล้ว
+27|to arrive; to|ถึง, ไปถึง|travel|我到学校了。|I've arrived at school.|ฉันถึงโรงเรียนแล้ว|你几点到？|What time will you arrive?|คุณจะถึงกี่โมง
+28|university|มหาวิทยาลัย|school|我哥哥在大学学习。|My older brother studies at university.|พี่ชายฉันเรียนอยู่มหาวิทยาลัย|这个大学很大。|This university is big.|มหาวิทยาลัยนี้ใหญ่มาก
+29|university student|นักศึกษา|school|她是大学生。|She's a university student.|เธอเป็นนักศึกษา|这些大学生都很忙。|These university students are all busy.|นักศึกษาเหล่านี้ยุ่งกันทุกคน
+30|(possessive particle)|ของ (คำเชื่อม)|function|这是我的手机。|This is my phone.|นี่คือมือถือของฉัน|他是我的好朋友。|He's my good friend.|เขาเป็นเพื่อนสนิทของฉัน
+31|(ordinal prefix)|ที่ (ลำดับ)|numbers|今天是第一天。|Today is the first day.|วันนี้เป็นวันแรก|他是第一个到学校的。|He was the first one to get to school.|เขาเป็นคนแรกที่มาถึงโรงเรียน
+32|shop, store|ร้าน|places|这个店卖什么？|What does this shop sell?|ร้านนี้ขายอะไร|那个店的包子很好吃。|The buns at that shop are delicious.|ซาลาเปาร้านนั้นอร่อยมาก
+33|o'clock; a little|โมง, นาฬิกา; นิดหน่อย|time|现在几点？|What time is it now?|ตอนนี้กี่โมง|我十二点吃午饭。|I eat lunch at twelve.|ฉันกินข้าวเที่ยงตอนสิบสองโมง
+34|telephone; phone call|โทรศัพท์|things|你的电话是多少？|What's your phone number?|เบอร์โทรของคุณคืออะไร|我没听见电话。|I didn't hear the phone.|ฉันไม่ได้ยินเสียงโทรศัพท์
+35|computer|คอมพิวเตอร์|things|我在电脑上写字。|I write on the computer.|ฉันพิมพ์หนังสือบนคอมพิวเตอร์|这个电脑很贵。|This computer is expensive.|คอมพิวเตอร์เครื่องนี้แพงมาก
+36|television|โทรทัศน์|things|晚上我看电视。|I watch TV in the evening.|ตอนเย็นฉันดูทีวี|爸爸喜欢看电视。|Dad likes watching TV.|พ่อชอบดูทีวี
+37|movie|ภาพยนตร์, หนัง|things|我们去看电影吧。|Let's go see a movie.|เราไปดูหนังกันเถอะ|这个电影很好看。|This movie is really good.|หนังเรื่องนี้สนุกมาก
+38|cinema|โรงภาพยนตร์|places|电影院在哪儿？|Where is the cinema?|โรงหนังอยู่ที่ไหน|我们在电影院见。|Let's meet at the cinema.|เราเจอกันที่โรงหนังนะ
+39|younger brother|น้องชาย|people|我弟弟八岁。|My younger brother is eight.|น้องชายฉันอายุแปดขวบ|弟弟在睡觉。|My younger brother is sleeping.|น้องชายกำลังนอนหลับ
+40|thing, stuff|ของ, สิ่งของ|things|你想买什么东西？|What do you want to buy?|คุณอยากซื้ออะไร|这些东西都是我的。|These things are all mine.|ของพวกนี้เป็นของฉันทั้งหมด
+41|all, both|ทั้งหมด, ล้วน|function|我们都是学生。|We're all students.|พวกเราเป็นนักเรียนทุกคน|他们都喜欢喝茶。|They all like drinking tea.|พวกเขาชอบดื่มชากันทุกคน
+42|to read|อ่าน|actions|请读一下。|Please read it.|ช่วยอ่านหน่อย|他在读书。|He's reading.|เขากำลังอ่านหนังสือ
+43|correct; to, toward|ถูก; ต่อ, กับ|function|对，我是老师。|Right, I'm a teacher.|ใช่ ฉันเป็นครู|老师对我很好。|The teacher is very good to me.|ครูดีกับฉันมาก
+44|sorry|ขอโทษ|phrases|对不起，我来晚了。|Sorry, I'm late.|ขอโทษ ฉันมาสาย|对不起！没关系。|Sorry! That's okay.|ขอโทษนะ ไม่เป็นไร
+45|many, much|มาก, เยอะ|describe|超市里人很多。|There are lots of people in the supermarket.|ในซูเปอร์มาร์เก็ตคนเยอะมาก|你多吃一点儿。|Eat a bit more.|กินเยอะๆ หน่อยนะ
+46|how many, how much|เท่าไร|question|这个多少钱？|How much is this?|อันนี้เท่าไร|你们学校有多少学生？|How many students are in your school?|โรงเรียนคุณมีนักเรียนเท่าไร
+47|to study; to read books|เรียนหนังสือ, อ่านหนังสือ|school|他在大学读书。|He studies at university.|เขาเรียนอยู่ที่มหาวิทยาลัย|我喜欢读书。|I like reading.|ฉันชอบอ่านหนังสือ
+48|two|สอง|numbers|今天是二月二日。|Today is February 2nd.|วันนี้วันที่สองกุมภาพันธ์|我住在二号。|I live at number two.|ฉันอยู่บ้านเลขที่สอง
+49|son|ลูกชาย|people|她有一个儿子。|She has a son.|เธอมีลูกชายหนึ่งคน|我儿子是小学生。|My son is a primary school student.|ลูกชายฉันเป็นนักเรียนประถม
+50|meal; cooked rice|ข้าว, มื้ออาหาร|food|我们去饭店吃饭吧。|Let's go eat at a restaurant.|เราไปกินข้าวที่ร้านอาหารกันเถอะ|妈妈在做饭。|Mom is cooking.|แม่กำลังทำอาหาร

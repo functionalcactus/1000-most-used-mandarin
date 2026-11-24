@@ -1,0 +1,50 @@
+101|to see, to catch sight of|มองเห็น|actions|我看见他了。|I saw him.|ฉันเห็นเขาแล้ว|你看见我的手机了吗？|Have you seen my phone?|คุณเห็นมือถือของฉันไหม
+102|class, lesson|บทเรียน, ชั้นเรียน|school|今天有汉语课。|There's a Chinese class today.|วันนี้มีวิชาภาษาจีน|我们九点上课。|We start class at nine.|เราเข้าเรียนตอนเก้าโมง
+103|can, may; okay|ได้, สามารถ|function|我可以坐这儿吗？|May I sit here?|ฉันนั่งตรงนี้ได้ไหม|可以，没问题。|Sure, no problem.|ได้ ไม่มีปัญหา
+104|mouth; (measure word for family members)|ปาก; คน (ลักษณนามสมาชิกครอบครัว)|function|我家有四口人。|There are four people in my family.|บ้านฉันมีสี่คน|他家有几口人？|How many people are in his family?|บ้านเขามีกี่คน
+105|piece; yuan (money)|ชิ้น; หยวน (เงิน)|shopping|这个十块钱。|This is ten yuan.|อันนี้สิบหยวน|我吃了一块面包。|I ate a piece of bread.|ฉันกินขนมปังไปหนึ่งชิ้น
+106|to come|มา|actions|你来我家吧。|Come to my place.|มาบ้านฉันสิ|老师来了。|The teacher is here.|ครูมาแล้ว
+107|teacher|ครู|school|我们的老师很好。|Our teacher is very nice.|ครูของเราดีมาก|老师，我有一个问题。|Teacher, I have a question.|คุณครูครับ ผมมีคำถามข้อหนึ่ง
+108|(completed action / change particle)|แล้ว (คำบอกความสำเร็จหรือการเปลี่ยนแปลง)|function|我吃饭了。|I've eaten.|ฉันกินข้าวแล้ว|下雨了。|It's started raining.|ฝนตกแล้ว
+109|cold|หนาว, เย็น|weather|今天很冷。|It's cold today.|วันนี้หนาวมาก|今天外边很冷。|It's cold outside today.|วันนี้ข้างนอกหนาวมาก
+110|inside, in|ใน, ข้างใน|places|房间里有一个人。|There's someone in the room.|ในห้องมีคนอยู่หนึ่งคน|妈妈在房间里。|Mom is in the room.|แม่อยู่ในห้อง
+111|two (with measure words)|สอง (ใช้กับลักษณนาม)|numbers|我有两个哥哥。|I have two older brothers.|ฉันมีพี่ชายสองคน|我要两杯茶。|I'd like two cups of tea.|ขอชาสองแก้ว
+112|zero|ศูนย์|numbers|我的电话是一三零……|My phone number is 1-3-0…|เบอร์โทรของฉันคือหนึ่งสามศูนย์...|现在八点零五分。|It's 8:05 now.|ตอนนี้แปดโมงห้านาที
+113|six|หก|numbers|我六点起床。|I get up at six.|ฉันตื่นนอนตอนหกโมง|我们学校有六个中国老师。|Our school has six Chinese teachers.|โรงเรียนเรามีครูคนจีนหกคน
+114|(question particle)|ไหม (คำลงท้ายคำถาม)|function|你是学生吗？|Are you a student?|คุณเป็นนักเรียนไหม|你喜欢喝茶吗？|Do you like tea?|คุณชอบดื่มชาไหม
+115|to sell|ขาย|shopping|这个店卖水果。|This shop sells fruit.|ร้านนี้ขายผลไม้|他卖了他的车。|He sold his car.|เขาขายรถของเขาแล้ว
+116|to buy|ซื้อ|shopping|我想买一个手机。|I want to buy a phone.|ฉันอยากซื้อมือถือหนึ่งเครื่อง|你买了什么？|What did you buy?|คุณซื้ออะไรมา
+117|mom|แม่|people|我妈妈是老师。|My mom is a teacher.|แม่ของฉันเป็นครู|妈妈，我回来了！|Mom, I'm home!|แม่ หนูกลับมาแล้ว
+118|busy|ยุ่ง|describe|你忙吗？|Are you busy?|คุณยุ่งไหม|我今天非常忙。|I'm extremely busy today.|วันนี้ฉันยุ่งมากๆ
+119|cat|แมว|things|我家有两只猫。|My family has two cats.|บ้านฉันมีแมวสองตัว|这只猫很漂亮。|This cat is very pretty.|แมวตัวนี้สวยมาก
+120|it's okay, never mind|ไม่เป็นไร|phrases|对不起！没关系。|Sorry! It's okay.|ขอโทษ ไม่เป็นไร|没关系，我们明天再去。|Never mind, we'll go again tomorrow.|ไม่เป็นไร พรุ่งนี้เราค่อยไปใหม่
+121|younger sister|น้องสาว|people|我妹妹是中学生。|My younger sister is a middle school student.|น้องสาวฉันเป็นนักเรียนมัธยม|妹妹很喜欢唱歌。|My younger sister loves singing.|น้องสาวชอบร้องเพลงมาก
+122|it's nothing; it doesn't matter|ไม่เป็นไร, ไม่มีอะไร|phrases|你没事吧？|Are you okay?|คุณไม่เป็นไรใช่ไหม|没事，我很好。|It's nothing, I'm fine.|ไม่เป็นไร ฉันสบายดี
+123|not have; did not|ไม่มี; ไม่ได้ (อดีต)|function|我没有钱。|I don't have any money.|ฉันไม่มีเงิน|他今天没去学校。|He didn't go to school today.|วันนี้เขาไม่ได้ไปโรงเรียน
+124|(plural suffix)|พวก (คำบอกพหูพจน์)|function|我们是朋友。|We're friends.|พวกเราเป็นเพื่อนกัน|同学们好！|Hello, classmates!|สวัสดีเพื่อนๆ นักเรียน
+125|bread|ขนมปัง|food|我早上吃面包。|I eat bread in the morning.|ฉันกินขนมปังตอนเช้า|超市里有面包吗？|Is there bread in the supermarket?|ในซูเปอร์มาร์เก็ตมีขนมปังไหม
+126|noodles|ก๋วยเตี๋ยว, บะหมี่|food|我想吃面条儿。|I want to eat noodles.|ฉันอยากกินบะหมี่|这个面条儿很好吃。|These noodles are delicious.|บะหมี่นี้อร่อยมาก
+127|cooked rice|ข้าวสวย|food|我中午吃米饭。|I eat rice at noon.|ตอนเที่ยงฉันกินข้าวสวย|中国人很喜欢吃米饭。|Chinese people love eating rice.|คนจีนชอบกินข้าวมาก
+128|next year|ปีหน้า|time|明年我去中国。|Next year I'm going to China.|ปีหน้าฉันจะไปจีน|我明年二十岁。|I'll be twenty next year.|ปีหน้าฉันจะอายุยี่สิบ
+129|tomorrow|พรุ่งนี้|time|明天见！|See you tomorrow!|พรุ่งนี้เจอกัน|明天你忙吗？|Are you busy tomorrow?|พรุ่งนี้คุณยุ่งไหม
+130|name|ชื่อ|people|你叫什么名字？|What's your name?|คุณชื่ออะไร|我不知道他的名字。|I don't know his name.|ฉันไม่รู้ชื่อเขา
+131|that|นั่น, นั้น|function|那是我的书。|That's my book.|นั่นคือหนังสือของฉัน|那个人是谁？|Who is that person?|คนนั้นคือใคร
+132|which|ไหน|question|你是哪国人？|Which country are you from?|คุณเป็นคนประเทศไหน|你想要哪个？|Which one do you want?|คุณอยากได้อันไหน
+133|over there|ฝั่งนั้น, ทางนั้น|places|超市在那边。|The supermarket is over there.|ซูเปอร์มาร์เก็ตอยู่ทางนั้น|那边有一个超市。|There's a supermarket over there.|ทางนั้นมีซูเปอร์มาร์เก็ตอยู่แห่งหนึ่ง
+134|that one|อันนั้น|function|那个苹果很大。|That apple is big.|แอปเปิลลูกนั้นใหญ่มาก|我要那个。|I want that one.|ฉันเอาอันนั้น
+135|which one|อันไหน|question|哪个是你的？|Which one is yours?|อันไหนเป็นของคุณ|你喜欢哪个？|Which one do you like?|คุณชอบอันไหน
+136|there|ที่นั่น|places|那里有很多人。|There are lots of people there.|ที่นั่นมีคนเยอะมาก|我家在那里。|My home is there.|บ้านฉันอยู่ที่นั่น
+137|where|ที่ไหน|question|你住在哪里？|Where do you live?|คุณอาศัยอยู่ที่ไหน|哪里有超市？|Where is there a supermarket?|ซูเปอร์มาร์เก็ตอยู่ที่ไหน
+138|male|ชาย, ผู้ชาย|people|那个男老师是我哥哥。|That male teacher is my older brother.|ครูผู้ชายคนนั้นเป็นพี่ชายของฉัน|我们学校有很多男学生。|Our school has lots of male students.|โรงเรียนเรามีนักเรียนชายเยอะมาก
+139|boyfriend|แฟน (ผู้ชาย)|people|她有男朋友吗？|Does she have a boyfriend?|เธอมีแฟนไหม|我男朋友是医生。|My boyfriend is a doctor.|แฟนฉันเป็นหมอ
+140|there|ที่นั่น|places|你在那儿吗？|Are you there?|คุณอยู่ที่นั่นไหม|那儿的东西很便宜。|Things there are cheap.|ของที่นั่นถูกมาก
+141|where|ที่ไหน|question|你去哪儿？|Where are you going?|คุณจะไปไหน|你家在哪儿？|Where's your home?|บ้านคุณอยู่ที่ไหน
+142|those|พวกนั้น|function|那些书是我的。|Those books are mine.|หนังสือพวกนั้นเป็นของฉัน|那些人是谁？|Who are those people?|คนพวกนั้นคือใคร
+143|which ones|อันไหนบ้าง|question|你认识哪些人？|Which people do you know?|คุณรู้จักใครบ้าง|你想买哪些东西？|Which things do you want to buy?|คุณอยากซื้ออะไรบ้าง
+144|(question / ongoing particle)|ล่ะ (คำลงท้าย)|function|我很好，你呢？|I'm fine, and you?|ฉันสบายดี แล้วคุณล่ะ|我的手机呢？|Where's my phone?|มือถือฉันล่ะ
+145|can, be able to|สามารถ, ได้|function|你明天能来吗？|Can you come tomorrow?|พรุ่งนี้คุณมาได้ไหม|我今天不能去。|I can't go today.|วันนี้ฉันไปไม่ได้
+146|you|คุณ, เธอ|people|你好！|Hello!|สวัสดี|你是老师吗？|Are you a teacher?|คุณเป็นครูไหม
+147|hello|สวัสดี|phrases|你好，我叫小明。|Hello, I'm Xiaoming.|สวัสดี ฉันชื่อเสี่ยวหมิง|老师，你好！|Hello, teacher!|สวัสดีครับคุณครู
+148|year|ปี|time|我在中国住了两年。|I lived in China for two years.|ฉันอยู่จีนมาสองปี|今年是二零二六年。|This year is 2026.|ปีนี้คือปี 2026
+149|you (plural)|พวกคุณ|people|你们好！|Hello, everyone!|สวัสดีทุกคน|你们是学生吗？|Are you students?|พวกคุณเป็นนักเรียนไหม
+150|you (polite)|คุณ (สุภาพ)|people|您好！|Hello! (polite)|สวัสดีครับ/ค่ะ|您叫什么名字？|May I have your name?|ไม่ทราบว่าคุณชื่ออะไรครับ

@@ -1,0 +1,50 @@
+251|school|โรงเรียน|school|我的学校很大。|My school is big.|โรงเรียนของฉันใหญ่มาก|学校在医院前边。|The school is in front of the hospital.|โรงเรียนอยู่หน้าโรงพยาบาล
+252|to want; to need; will|ต้องการ, จะ, ต้อง|function|我要一杯茶。|I'd like a cup of tea.|ขอชาหนึ่งแก้ว|明天我要上班。|I have to work tomorrow.|พรุ่งนี้ฉันต้องไปทำงาน
+253|also, too|ก็, ด้วย|function|我也是学生。|I'm a student too.|ฉันก็เป็นนักเรียน|他也喜欢喝茶。|He also likes tea.|เขาก็ชอบดื่มชาเหมือนกัน
+254|one|หนึ่ง|numbers|我有一个妹妹。|I have one younger sister.|ฉันมีน้องสาวหนึ่งคน|今天是一月一日。|Today is January 1st.|วันนี้วันที่หนึ่งมกราคม
+255|half|ครึ่งหนึ่ง|numbers|我吃了一半。|I ate half.|ฉันกินไปครึ่งหนึ่ง|一半的学生是中国人。|Half the students are Chinese.|นักเรียนครึ่งหนึ่งเป็นคนจีน
+256|a little|นิดหน่อย|function|我会说一点儿汉语。|I can speak a little Chinese.|ฉันพูดภาษาจีนได้นิดหน่อย|请多吃一点儿。|Please eat a bit more.|กินเพิ่มอีกหน่อยนะ
+257|clothes|เสื้อผ้า|things|我想买新衣服。|I want to buy new clothes.|ฉันอยากซื้อเสื้อผ้าใหม่|这件衣服很漂亮。|This piece of clothing is beautiful.|เสื้อตัวนี้สวยมาก
+258|doctor|หมอ, แพทย์|health|我妈妈是医生。|My mom is a doctor.|แม่ของฉันเป็นหมอ|医生说我没事。|The doctor says I'm fine.|หมอบอกว่าฉันไม่เป็นอะไร
+259|once, a bit (softens a verb)|สักหน่อย, สักครั้ง|function|我想休息一下。|I'd like to rest a bit.|ฉันอยากพักสักหน่อย|你看一下这个。|Take a look at this.|ลองดูอันนี้หน่อย
+260|some, a few|บ้าง, จำนวนหนึ่ง|function|我有一些问题。|I have some questions.|ฉันมีคำถามอยู่บ้าง|我们买一些水果吧。|Let's buy some fruit.|เราซื้อผลไม้สักหน่อยเถอะ
+261|hospital|โรงพยาบาล|health|医院在哪儿？|Where's the hospital?|โรงพยาบาลอยู่ที่ไหน|他病了，在医院。|He's sick and in the hospital.|เขาป่วย อยู่ที่โรงพยาบาล
+262|chair|เก้าอี้|things|房间里有一个椅子。|There's a chair in the room.|ในห้องมีเก้าอี้ตัวหนึ่ง|请坐这个椅子。|Please sit in this chair.|เชิญนั่งเก้าอี้ตัวนี้
+263|to have; there is|มี|function|我有一个哥哥。|I have an older brother.|ฉันมีพี่ชายหนึ่งคน|学校里有一个超市。|There's a supermarket in the school.|ในโรงเรียนมีซูเปอร์มาร์เก็ตอยู่แห่งหนึ่ง
+264|some (of them)|บางคน, บางอัน|function|有的人喜欢喝茶。|Some people like tea.|บางคนชอบดื่มชา|有的东西很贵。|Some things are expensive.|ของบางอย่างแพงมาก
+265|some; somewhat|บ้าง; ค่อนข้าง|function|有些学生在外边。|Some students are outside.|นักเรียนบางคนอยู่ข้างนอก|有些人不喜欢吃米饭。|Some people don't like rice.|บางคนไม่ชอบกินข้าว
+266|a little (usually negative)|นิดหน่อย, ค่อนข้าง (มักในแง่ลบ)|describe|今天有点儿冷。|It's a little cold today.|วันนี้หนาวนิดหน่อย|这个有一点儿贵。|This is a bit expensive.|อันนี้แพงไปหน่อย
+267|rain|ฝน|weather|外边雨很大。|It's raining hard outside.|ข้างนอกฝนตกหนักมาก|今天有雨吗？|Will there be rain today?|วันนี้ฝนจะตกไหม
+268|yuan (formal)|หยวน|shopping|这本书五十元。|This book is fifty yuan.|หนังสือเล่มนี้ห้าสิบหยวน|一个苹果三元。|One apple is three yuan.|แอปเปิลหนึ่งลูกสามหยวน
+269|month; moon|เดือน; พระจันทร์|time|今天是几月几号？|What's the date today?|วันนี้วันที่เท่าไร เดือนอะไร|我下个月去中国。|I'm going to China next month.|เดือนหน้าฉันจะไปจีน
+270|again (future)|อีก, อีกครั้ง|function|请再说一下。|Please say it again.|ช่วยพูดอีกครั้ง|明天再见！|See you again tomorrow!|พรุ่งนี้เจอกันใหม่
+271|at, in; to be at; (in progress)|อยู่ที่; กำลัง|function|我在家。|I'm at home.|ฉันอยู่บ้าน|他在看电视。|He's watching TV.|เขากำลังดูทีวี
+272|goodbye|ลาก่อน|phrases|再见！|Goodbye!|ลาก่อน|老师，再见！|Goodbye, teacher!|ลาก่อนครับคุณครู
+273|early|เช้า, แต่เช้า|time|你早！|Good morning!|อรุณสวัสดิ์|今天我起床很早。|I got up early today.|วันนี้ฉันตื่นแต่เช้า
+274|breakfast|อาหารเช้า|food|你吃早饭了吗？|Have you had breakfast?|คุณกินข้าวเช้าหรือยัง|我早饭吃面包和鸡蛋。|I have bread and eggs for breakfast.|อาหารเช้าฉันกินขนมปังกับไข่
+275|morning|ตอนเช้า|time|早上好！|Good morning!|อรุณสวัสดิ์|我早上七点起床。|I get up at seven in the morning.|ฉันตื่นนอนเจ็ดโมงเช้า
+276|how; why|อย่างไร; ทำไม|question|这个字怎么读？|How do you read this character?|ตัวนี้อ่านว่าอย่างไร|你怎么去学校？|How do you get to school?|คุณไปโรงเรียนยังไง
+277|how is it; what do you think|เป็นอย่างไร|question|你的工作怎么样？|How's your job?|งานของคุณเป็นยังไงบ้าง|我们去看电影，怎么样？|Let's see a movie, how about it?|เราไปดูหนังกันดีไหม
+278|to look for|หา|actions|我在找我的手机。|I'm looking for my phone.|ฉันกำลังหามือถืออยู่|你找谁？|Who are you looking for?|คุณหาใคร
+279|this|นี่, นี้|function|这是我的朋友。|This is my friend.|นี่คือเพื่อนของฉัน|这本书很好看。|This book is very good.|หนังสือเล่มนี้สนุกมาก
+280|this side, here|ฝั่งนี้, ทางนี้|places|请到这边来。|Please come over here.|เชิญมาทางนี้|这边人很少。|There are few people on this side.|ฝั่งนี้คนน้อย
+281|this one|อันนี้|function|这个多少钱？|How much is this one?|อันนี้เท่าไร|我要这个。|I'll take this one.|ฉันเอาอันนี้
+282|here|ที่นี่|places|这里是我的学校。|This is my school.|ที่นี่คือโรงเรียนของฉัน|这里的菜很好吃。|The food here is delicious.|อาหารที่นี่อร่อยมาก
+283|really|จริงๆ|describe|你的汉语真好！|Your Chinese is really good!|ภาษาจีนของคุณดีจริงๆ|今天真冷。|It's really cold today.|วันนี้หนาวจริงๆ
+284|in the middle of (doing)|กำลัง|function|我正在吃饭。|I'm eating right now.|ฉันกำลังกินข้าวอยู่|他正在工作呢。|He's in the middle of working.|เขากำลังทำงานอยู่
+285|here|ที่นี่|places|你来这儿吧。|Come here.|มาที่นี่สิ|这儿有很多书店。|There are lots of bookstores here.|แถวนี้มีร้านหนังสือเยอะ
+286|these|เหล่านี้|function|这些是我的朋友。|These are my friends.|เหล่านี้คือเพื่อนของฉัน|这些苹果很便宜。|These apples are cheap.|แอปเปิลพวกนี้ถูกมาก
+287|(measure word for animals)|ตัว (ลักษณนามสัตว์)|function|我有一只狗。|I have a dog.|ฉันมีหมาหนึ่งตัว|那只猫是谁的？|Whose cat is that?|แมวตัวนั้นเป็นของใคร
+288|to know (a fact)|รู้|actions|我知道。|I know.|ฉันรู้|你知道他叫什么名字吗？|Do you know what his name is?|คุณรู้ไหมว่าเขาชื่ออะไร
+289|China|ประเทศจีน|places|我在中国学习汉语。|I'm studying Chinese in China.|ฉันเรียนภาษาจีนที่ประเทศจีน|中国很大。|China is very big.|ประเทศจีนใหญ่มาก
+290|Chinese (language)|ภาษาจีน|school|你会说中文吗？|Can you speak Chinese?|คุณพูดภาษาจีนได้ไหม|这本中文书很好看。|This Chinese book is very good.|หนังสือภาษาจีนเล่มนี้สนุกมาก
+291|noon|เที่ยง|time|中午我在公司吃饭。|At noon I eat at the company.|ตอนเที่ยงฉันกินข้าวที่บริษัท|明天中午见！|See you tomorrow at noon!|พรุ่งนี้เที่ยงเจอกัน
+292|middle school|โรงเรียนมัธยม|school|我妹妹在中学上学。|My younger sister goes to middle school.|น้องสาวฉันเรียนอยู่ชั้นมัธยม|这个中学很好。|This middle school is very good.|โรงเรียนมัธยมนี้ดีมาก
+293|middle school student|นักเรียนมัธยม|school|他是中学生。|He's a middle school student.|เขาเป็นนักเรียนมัธยม|中学生很忙。|Middle school students are busy.|นักเรียนมัธยมยุ่งมาก
+294|to live (somewhere)|อาศัยอยู่, พัก|home|你住在哪儿？|Where do you live?|คุณอาศัยอยู่ที่ไหน|我住在学校里。|I live at the school.|ฉันพักอยู่ในโรงเรียน
+295|table, desk|โต๊ะ|things|书在桌子上。|The book is on the desk.|หนังสืออยู่บนโต๊ะ|这个桌子很大。|This table is big.|โต๊ะตัวนี้ใหญ่มาก
+296|character, word|ตัวอักษร|school|这个字我不认识。|I don't know this character.|ตัวอักษรตัวนี้ฉันไม่รู้จัก|你的字很漂亮。|Your handwriting is beautiful.|ลายมือของคุณสวยมาก
+297|to sit; to take (transport)|นั่ง|actions|请坐！|Please sit down!|เชิญนั่ง|我坐出租车去。|I'll go by taxi.|ฉันจะนั่งแท็กซี่ไป
+298|to do, to make|ทำ|actions|你在做什么？|What are you doing?|คุณกำลังทำอะไร|妈妈做的饺子很好吃。|Mom's homemade dumplings are delicious.|เกี๊ยวที่แม่ทำอร่อยมาก
+299|to cook|ทำอาหาร|food|我会做饭。|I can cook.|ฉันทำอาหารเป็น|今天晚上谁做饭？|Who's cooking tonight?|คืนนี้ใครทำอาหาร
+300|yesterday|เมื่อวาน|time|昨天我去了超市。|I went to the supermarket yesterday.|เมื่อวานฉันไปซูเปอร์มาร์เก็ต|昨天很冷。|It was cold yesterday.|เมื่อวานหนาวมาก

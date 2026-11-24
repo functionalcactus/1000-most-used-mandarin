@@ -1,0 +1,10 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  // Static app served by Cloudflare Workers (static asset requests are free).
+  "name": "bao-hsk",
+  "compatibility_date": "2026-11-20",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
+  }
+}
